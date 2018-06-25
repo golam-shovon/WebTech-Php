@@ -1,5 +1,6 @@
 <?php
-session_start(); 
+session_start();
+ 
 $uspw=array("P"=>"pp", "T"=>"tt", "J"=>"jj");
 var_dump($uspw);
 
