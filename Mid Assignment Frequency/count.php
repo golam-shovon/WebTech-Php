@@ -10,7 +10,6 @@
         <hr>
        <table id="table01">
             <tr>
-                <th>Count</th>
                 <td>Character</td>
                 <td>Count</td>
              </tr>
@@ -31,7 +30,7 @@
                     echo $q;
                     echo"</td>";
                     echo"<td>";
-                    echo substr_count($str,$q);
+                    echo array_count_values($arru)[$q];
                     echo"</td>";
                     echo "</tr>";                  
                     array_push($atr,$q);
