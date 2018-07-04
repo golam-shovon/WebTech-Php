@@ -10,8 +10,9 @@
         <hr>
        <table id="table01">
             <tr>
-                <th>Character</th>
                 <th>Count</th>
+                <td>Character</td>
+                <td>Count</td>
              </tr>
              <?php
                 $str= $_POST['tex'];
@@ -39,19 +40,21 @@
                 }
                 ?>
         </table>
-        <a cls="btn" id="button" href="index.php">Enter Another String</a> 
+        
+        <br>
+        <br>
+        <a cls="btn" id="button" href="index.php">Input Another String</a> 
         <br>
         <hr>
         <p id="p01">Word Frequency Count</p>
         <hr>
         <table id="table01">
             <tr>
-                <th>Word</th>
-                <th>Count</th>
+                <td>Word</td>
+                <td>Count</td>
              </tr>
              <?php
-                $str= $_POST['tex'];
-                $sstr=trim($str);
+                $str= $_POST['tex'];              
                 $arr =  explode(" ", $str);
                 $at=array();
                 foreach($arr as $v)
@@ -67,7 +70,7 @@
                     echo $v;
                     echo"</td>";
                     echo"<td>";
-                    echo substr_count($sstr,$v);
+                    echo array_count_values($arr)[$v];
                     echo"</td>";
                     echo "</tr>";                  
                     array_push($at,$v);
@@ -76,7 +79,8 @@
                 }
                 ?>
         </table>
-        <a cls="btn" id="button" href="index.php">Enter Another String</a>        
+        <br>
+        <a cls="btn" id="button" href="index.php">Input Another String</a>        
                 
             
 
