@@ -56,12 +56,7 @@
                 Insert your sting into the following text area to get the counter per Character
             </p>
             
-            <?php
-
-            $comments= $_POST['tex'];
-            
-            
-            ?>
+          
             <form id="tt" action="count.php" method="post">
                 <textarea name="tex" form="tt" rows="10" cols="30"></textarea>
                 <div class="center">

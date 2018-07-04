@@ -9,7 +9,7 @@
        
          
 
-         $comments= $_POST['tt'];
+         $comments= $_POST['tex'];
          echo$comments;
          
          
