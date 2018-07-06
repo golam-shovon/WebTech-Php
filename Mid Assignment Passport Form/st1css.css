@@ -1,0 +1,73 @@
+#header
+{
+    padding-left: 2%;    
+}
+#h2
+{
+    color:  red;
+    font-style:italic;
+    padding-left: 5%;
+}
+#blueun
+{
+    color: blue;
+    text-decoration: underline;
+}
+#h3
+{
+    padding-left: 5%;
+}
+#redit 
+{
+    color: red;
+    font-style:italic;
+}
+#marit
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: block;
+    height: 5px;
+    border: 0;
+    border-top: 3px solid #ccc;    
+}
+#div02
+{
+    margin-left:5%;
+    margin-right:5%;
+    border:1px solid #D8D8D8;
+    border-radius:3px;
+    padding-left:30px;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+#table01
+{
+    width:100%;
+}
+#nmb
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:13px;
+    white-space:pre;
+}
+#blue
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:17px;
+    color:#0F6D89;       
+}
+#w
+{
+    width: 100%;
+  overflow: hidden;
+  
+    color: white;
+    cursor: pointer;
+}
+#op01
+{
+    border-radius:5px;
+    border:1px solid #D8D8D8;
+    width:210px;
+}
