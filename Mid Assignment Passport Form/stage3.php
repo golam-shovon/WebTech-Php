@@ -12,7 +12,7 @@
     <br>
     <div id="div02">
         <form action="stage4.php" method="post">
-            <table id="table01">
+            <table id="table02">
                 <tr>
                     <td colspan="2">
                         <p id="blue"><b>Payment Information</b></p>
@@ -20,16 +20,19 @@
                     <td></td><td></td>
                 </tr>
                 <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
                 <tr>
                     <td rowspan="2">
                          <span id="nmb"><b>Payment:</b></span>
-                    </td>
-                    <td rowspan="2">
-                        <input type="radio" name="payement" value="online" >Online<br>
-                        <input type="radio" name="payment" value="not-online">Not-onlien<br> 
+                    
+                       <td>
+                           <input type="radio" name="payement" value="online" >Online<br>
+                            <input type="radio" name="payment" value="not-online">Not-online<br> 
+                       </td> 
                     </td>  
-                    <td></td><td></td>
+                    <td></td><td></td><td></td>
                 </tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
                 <tr><td></td><td></td><td></td><td></td></tr>
                 <tr>
                     <td >
@@ -39,13 +42,89 @@
                 </tr>
                 <tr>
                     <td>
-                    <td>
-                        <span id="nmb"><b>Amount:<span id="redit">*</span></b></span>
-                     </td>
+                        <p>
+                            <span id="nmb" margin-right:"5 em"><b>Amount:<span id="redit">*</span></b></span>   
+                    </td >      
+                            <td>
+                                 <p>
+                                    <select  name="currency">
+                                        <option value="BDT" selected >BDT</option>
+                                        <option value="USD">USD</option>
+                                        <option value="AUD">AUD</option>
+                                    </select> 
+                                    <input type="text" id="text02" size="30" name="amount">
+                                 </p>
+                            </td> 
                     </td>
+                    <td></td><td></td>
                 </tr>
-
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr>
+                    <td>
+                            <span id="nmb"><b>Date of Payment:<span id="redit">*</span></b></span>
+                        </td>
+                        <td>
+                            <input type="text" id="text01" size="30" name="paymentdate">
+                        </td>  
+                    <td></td></td></td>
+                </tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr>
+                    <td>
+                        <span id="nmb"><b>Receiptno:<span id="redit">*</span></b></span>
+                    </td>
+                    <td>
+                         <input type="text" id="text01" size="30" name="receiptno">
+                    </td>  
+                    <td></td></td></td>
+                </tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr>
+                    <td>
+                        <span id="nmb"><b>Name of Bank:</b></span><br>
+                    </td>
+                    <td>
+                        <select  id="op01" name="bank">
+                             <option hidden></option>
+                             <option value="Ncc Bank" >Ncc Bank</option>
+                             <option value="Dhaka Bank">Dhaka Bank</option>
+                         </select>
+                    </td>
+                    <td></td></td></td>
+                </tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr>
+                    <td>
+                         <span id="nmb"><b>Name of Brand:</b></span><br>
+                    </td>
+                    <td>
+                        <select  id="op01" name="branch">
+                             <option hidden></option>
+                             <option value="Mipur" >Mipur</option>
+                             <option value="Kuratoli Sea">Kuratoli Sea</option>
+                        </select>
+                    </td>
+                    <td></td></td></td>
+                </tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
             </table>
+        <table id="table01">
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr>
+                <td></td><td></td>
+                <td></td>
+                <td align="right" >
+                     <input id="button01" type="submit" value="Save & Next" href="stage2.php">
+                </td>
+            </tr>
+        </table>
         </from>
     </div>
 

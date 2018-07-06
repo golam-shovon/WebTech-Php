@@ -108,10 +108,12 @@
                             <span id="nmb"><b>Height:<span id="redit">*</span></b></span>
                         </td>
                         <td>
-                            <p><input type="text" id="text02" size="30" name="height_cm">
-                            <span id="nmb">cm</span>
-                            <input type="text" id="text02" size="30" name="height_inch">
-                            <span id="nmb">inch</span></p>
+                            <p>
+                                <input type="text" id="text02" size="30" name="height_cm">
+                                <span id="nmb">cm</span>
+                                <input type="text" id="text02" size="30" name="height_inch">
+                                <span id="nmb">inch</span>
+                            </p>
                         </td>
                     </tr>
                     <tr>
