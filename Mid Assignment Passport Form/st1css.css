@@ -51,19 +51,17 @@
     font-size:13px;
     white-space:pre;
 }
+#smb
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:10.5px;
+    white-space:pre;
+}
 #blue
 {
     font-family: Arial, Helvetica, sans-serif;
     font-size:17px;
     color:#0F6D89;       
-}
-#w
-{
-    width: 100%;
-  overflow: hidden;
-  
-    color: white;
-    cursor: pointer;
 }
 #op01
 {

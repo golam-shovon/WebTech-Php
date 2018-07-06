@@ -62,6 +62,7 @@
                         </td>
                         <td rowspan=2>
                             <select id="op01" name="Pass_type">
+                                <option hidden>-select-</option>
                                  <option value="Normal" >Normal</option>
                                  <option value="Offical">Offical</option>
                                  <option value="Diplomatic">Diplomatic</option>
@@ -125,7 +126,116 @@
                             </select> 
                         </td>
                     </tr>
-                    
+                    <tr><td></td><td></td><td></td><td></td></tr>
+                    <tr>
+                        <td>
+                            <p id="smb">Name Of</p>
+                            <span id="smb">applicant:<span id="redit">*</span></span>
+                        </td>
+                        <td>
+                            <input type="text" id="text01" size="30" name="nameofapplicant">
+                        </td>
+                        <td>
+                             <span id="nmb"><b>Email:<span id="redit">*</span></b></span>
+                        </td>
+                        <td>
+                            <input type="text" id="text01" size="30" name="email">    
+                        </td>
+                    </tr>
+                    <tr><td></td><td></td><td></td><td></td></tr>
+                    <tr>
+                        <td>
+                            <p id="smb"><b>First Part(Given</b></p>
+                            <span id="smb"><b>Name):</b></span>
+                        </td>
+                        <td>
+                            <input type="text" id="text01" size="30" name="givennameofapplicant">
+                        </td>
+                        <td colspan="2" rowspan="2">
+                            <p id="blue"><b>Citizenship Information</b></p> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="smb">Second Part</p>
+                            <span id="smb">(surname):</span>
+                        </td>
+                        <td>
+                            <input type="text" id="text01" size="30" name="surnnameofapplicant">
+                        </td>
+                    </tr>
+                    <tr><td></td><td></td><td></td><td></td></tr>
+                    <tr>
+                        <td colspan="2" rowspan="2">
+                            <span id="nmb"><b>Gurdian <input type="checkbox" name="adopted" value="yesadopted"><span id="redit">"Tick"</span>only if the Appllicant is legally adapted</b></span> 
+                        </td>
+                         <td>
+                            <span id="nmb"><b>Nationality:<span id="redit">*</span></b></span><br><br>
+                        </td>
+                        <td>
+                            <select  id="op01" name="Nationality_place">
+                                 <option value="Bangladesh" selected>Bangladesh</option>
+                                 <option value="Sewden">Sewden</option>
+                            </select><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="nmb"><b>Citizenship Status:<span id="redit">*</span></b></span><br><br>
+                        </td>
+                        <td>
+                            <select  id="op01" name="Citizenship_Status">
+                                 <option value="Birth" selected>Birth</option>
+                                 <option value="Marriage">Marriage</option>
+                            </select><br><br>
+                        </td>
+                    </tr>
+                    <tr><td></td><td></td><td></td><td></td></tr>
+                    <tr>
+                        <td>
+                            <span id="nmb"><b>Father's name::<span id="redit">*</span></b></span>
+                        </td>
+                        <td>
+                            <input type="text" id="text01" size="30" name="nameoffather">
+                        </td>
+                        <td>
+                            <span id="nmb"><b>Duel Citizenship:<span id="redit">*</span></b></span>
+                        </td>
+                        <td>
+                            <input type="radio" name="citizen_ship_type" value="Yes" >Yes<br>
+                            <input type="radio" name="citizen_ship_type" value="No"> No<br>
+                        </td>
+                    </tr>
+                    <tr><td></td><td></td><td></td><td></td></tr>
+                    <tr>
+                        <td>
+                            <p id="smb"><b>Father's</b></p>
+                            <span id="smb"><b>Nationality:<span id="redit">*</span></b></span>
+                        </td>
+                        <td>
+                            <select  id="op01" name="Father's_Nationality">
+                                 <option value="Bangladesh" selected>Bangladesh</option>
+                                 <option value="Sewden">Sewden</option>
+                            </select><br><br>
+                        </td>
+                        <td colspan="2" rowspan="2">
+                            <p id="blue"><b>Present Address</b></p> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="smb"><b>Father's</b></p>
+                            <span id="smb"><b>Profession:<span id="redit">*</span></b></span>
+                        </td>
+                        <td>
+                            <select  id="op01" name="Father's_Profession">
+                                 <option hidden>-select-</option>
+                                 <option value="Government Service" >Government Service</option>
+                                 <option value="Privaet Service">Privaet Service</option>
+                                 <option value="Business">Business</option>
+                            </select><br><br>
+                        </td>
+                    </tr>
                 </table>
             </form>
     </div>
