@@ -213,7 +213,7 @@
                             <span id="smb"><b>Nationality:<span id="redit">*</span></b></span>
                         </td>
                         <td>
-                            <select  id="op01" name="Father's_Nationality">
+                            <select  id="op01" name="father_Nationality">
                                  <option value="Bangladesh" selected>Bangladesh</option>
                                  <option value="Sewden">Sewden</option>
                             </select><br><br>
@@ -228,7 +228,7 @@
                             <span id="smb"><b>Profession:<span id="redit">*</span></b></span>
                         </td>
                         <td>
-                            <select  id="op01" name="Father's_Profession">
+                            <select  id="op01" name="father_Profession">
                                  <option hidden>-select-</option>
                                  <option value="Government Service" >Government Service</option>
                                  <option value="Privaet Service">Privaet Service</option>
@@ -236,6 +236,101 @@
                             </select><br><br>
                         </td>
                     </tr>
+                    <tr><td></td><td></td><td></td><td></td></tr>
+                    <tr>
+                        <td>
+                            <span id="nmb"><b>Mother's name:<span id="redit">*</span></b></span>
+                        </td>
+                        <td>
+                            <input type="text" id="text01" size="30" name="nameofmother">
+                        </td>
+                        <td>
+                            <span id="nmb"><b>Villege/House:</b></span>
+                        </td>
+                        <td>
+                            <input type="text" id="text01" size="30" name="villege/house">
+                        </td>
+                    </tr>
+                    <tr><td></td><td></td><td></td><td></td></tr>
+                    <tr>
+                        <td>
+                            <p id="smb"><b>Mother's</b></p>
+                            <span id="smb"><b>Nationality:<span id="redit">*</span></b></span>
+                        </td>
+                        <td>
+                            <select  id="op01" name="mother_Nationality">
+                                 <option value="Bangladesh" selected>Bangladesh</option>
+                                 <option value="Sewden">Sewden</option>
+                            </select><br><br>
+                        </td>
+                        <td>
+                            <span id="nmb"><b>Road/Block/Sector:</b></span>
+                        </td>
+                        <td>
+                            <input type="text" id="text01" size="30" name="road/block/sector">
+                        </td>
+                    </tr>
+                    <tr><td></td><td></td><td></td><td></td></tr>
+                    <tr>
+                        <td>
+                            <p id="smb"><b>Mother's</b></p>
+                            <span id="smb"><b>Profession:<span id="redit">*</span></b></span>
+                        </td>
+                        <td>
+                            <select  id="op01" name="mother_Profession">
+                                 <option hidden>-select-</option>
+                                 <option value="Government Service" >Government Service</option>
+                                 <option value="Privaet Service">Privaet Service</option>
+                                 <option value="Business">Business</option>
+                            </select><br><br>
+                        </td>
+                        <td>
+                            <span id="nmb"><b>District:<span id="redit">*</span></b></span><br><br>
+                        </td>
+                        <td>
+                            <select  id="op01" name="district">
+                                 <option hidden>-select-</option>
+                                 <option value="Dhaka" >Dhaka</option>
+                                 <option value="Kustia">Kustia</option>
+                                 <option value="Barishal">Barishal</option>
+                            </select><br><br>
+                        </td>
+                    </tr>
+                    <tr><td></td><td></td><td></td><td></td></tr>
+                    <tr>
+                        <td >
+                            <span id="nmb"><b>Spouse's name:<span id="redit">*</span></b></span>
+                        </td>
+                        <td >
+                            <input type="text" id="text01" size="30" name="nameofspouse">
+                        </td>
+                        <td>
+                            <span id="nmb"><b>Police Station:<span id="redit">*</span></b></span><br><br>
+                        </td>
+                         <td>
+                            <select  id="op01" name="police">
+                                 <option hidden>-select-</option>
+                                 <option value="Dhaka" >Dhaka</option>
+                                 <option value="Kustia">Kustia</option>
+                                 <option value="Barishal">Barishal</option>
+                            </select><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td>
+                        <td>
+                            <span id="nmb"><b>Post Office:<span id="redit">*</span></b></span><br><br>
+                        </td>
+                         <td>
+                            <select  id="op01" name="postoffice">
+                                 <option hidden>-select-</option>
+                                 <option value="Dhaka" >Dhaka</option>
+                                 <option value="Kustia">Kustia</option>
+                                 <option value="Barishal">Barishal</option>
+                            </select><br><br>
+                        </td>
+                    </tr>
+                    <tr><td></td><td></td><td></td><td></td></tr>
                 </table>
             </form>
     </div>
