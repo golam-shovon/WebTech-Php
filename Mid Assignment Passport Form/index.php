@@ -11,7 +11,7 @@
     <hr id="marit">
     <br>
     <div id="div02">
-            <form action="formoneresults.php" method="post">
+            <form action="stage2.php" method="post">
                 <table id="table01">
                     <tr>
                         <td colspan="2">
@@ -119,7 +119,8 @@
                             <span id="nmb"><b>Religion:<span id="redit">*</span></b></span>
                         </td>
                         <td>
-                            <select id="op01" name="Religion">
+                            <select id="op01" name="religion">
+                                 <option hidden>-select-</option>
                                  <option value="Islam" >Islam</option>
                                  <option value="Chrishtian">Chrishtian</option>
                                  <option value="Hindu">Hindu</option>
@@ -173,7 +174,7 @@
                             <span id="nmb"><b>Nationality:<span id="redit">*</span></b></span><br><br>
                         </td>
                         <td>
-                            <select  id="op01" name="Nationality_place">
+                            <select  id="op01" name="nationality_place">
                                  <option value="Bangladesh" selected>Bangladesh</option>
                                  <option value="Sewden">Sewden</option>
                             </select><br><br>
@@ -184,7 +185,7 @@
                             <span id="nmb"><b>Citizenship Status:<span id="redit">*</span></b></span><br><br>
                         </td>
                         <td>
-                            <select  id="op01" name="Citizenship_Status">
+                            <select  id="op01" name="citizenship_status">
                                  <option value="Birth" selected>Birth</option>
                                  <option value="Marriage">Marriage</option>
                             </select><br><br>
@@ -213,7 +214,7 @@
                             <span id="smb"><b>Nationality:<span id="redit">*</span></b></span>
                         </td>
                         <td>
-                            <select  id="op01" name="father_Nationality">
+                            <select  id="op01" name="father_nationality">
                                  <option value="Bangladesh" selected>Bangladesh</option>
                                  <option value="Sewden">Sewden</option>
                             </select><br><br>
@@ -228,7 +229,7 @@
                             <span id="smb"><b>Profession:<span id="redit">*</span></b></span>
                         </td>
                         <td>
-                            <select  id="op01" name="father_Profession">
+                            <select  id="op01" name="father_profession">
                                  <option hidden>-select-</option>
                                  <option value="Government Service" >Government Service</option>
                                  <option value="Privaet Service">Privaet Service</option>
@@ -258,7 +259,7 @@
                             <span id="smb"><b>Nationality:<span id="redit">*</span></b></span>
                         </td>
                         <td>
-                            <select  id="op01" name="mother_Nationality">
+                            <select  id="op01" name="mother_nationality">
                                  <option value="Bangladesh" selected>Bangladesh</option>
                                  <option value="Sewden">Sewden</option>
                             </select><br><br>
@@ -277,7 +278,7 @@
                             <span id="smb"><b>Profession:<span id="redit">*</span></b></span>
                         </td>
                         <td>
-                            <select  id="op01" name="mother_Profession">
+                            <select  id="op01" name="mother_profession">
                                  <option hidden>-select-</option>
                                  <option value="Government Service" >Government Service</option>
                                  <option value="Privaet Service">Privaet Service</option>
@@ -309,7 +310,7 @@
                         </td>
                          <td>
                             <select  id="op01" name="police">
-                                 <option hidden>-select-</option>
+                                 <option hidden></option>
                                  <option value="Dhaka" >Dhaka</option>
                                  <option value="Kustia">Kustia</option>
                                  <option value="Barishal">Barishal</option>
@@ -323,6 +324,106 @@
                         </td>
                          <td>
                             <select  id="op01" name="postoffice">
+                                 <option hidden></option>
+                                 <option value="Dhaka" >Dhaka</option>
+                                 <option value="Kustia">Kustia</option>
+                                 <option value="Barishal">Barishal</option>
+                            </select><br><br>
+                        </td>
+                    </tr>
+                    <tr><td></td><td></td><td></td><td></td></tr>
+                    <tr>
+                    <td>
+                            <p id="smb"><b>Spouse's</b></p>
+                            <span id="smb"><b>Nationality:</b></span>
+                        </td>
+                        <td>
+                            <select  id="op01" name="spouse_nationality">
+                                <option hidden>-select-</option>
+                                 <option value="Bangladesh" >Bangladesh</option>
+                                 <option value="Sewden">Sewden</option>
+                            </select><br><br>
+                        </td>
+                        <td colspan="2" rowspan="2">
+                            <p id="blue"><b>Permanent Address</b></p> 
+                        </td>
+                    </tr>
+                    <tr>
+                         <td>
+                            <p id="smb"><b>Spouse's</b></p>
+                            <span id="smb"><b>Profession:</b></span>
+                        </td>
+                        <td>
+                            <select  id="op01" name="spouse_profession">
+                                 <option hidden>-select-</option>
+                                 <option value="Government Service" >Government Service</option>
+                                 <option value="Privaet Service">Privaet Service</option>
+                                 <option value="Business">Business</option>
+                            </select><br><br>
+                        </td>
+                    </tr>
+                    <tr><td></td><td></td><td></td><td></td></tr>
+                    <tr>
+                        <td>
+                            <span id="nmb"><b>Marital Status:<span id="redit">*</span></b></span><br><br>
+                        </td>
+                        <td>
+                            <select  id="op01" name="marital_status">
+                                 <option hidden>-select-</option>
+                                 <option value="Married" >Married</option>
+                                 <option value="Single">Single</option>
+                            </select><br><br>
+                        </td>
+                        <td colspan="2">
+                            <p id="nmb"><b><input type="checkbox" name="addresssameas" value="yessame">Same as above</b></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="smb"><b>Applicant's</b></p>
+                            <span id="smb"><b>Profession:<span id="redit">*</span></b></span>
+                        </td>
+                        <td>
+                            <select  id="op01" name="applicant_profession">
+                                 <option hidden>-select-</option>
+                                 <option value="Government Service" >Government Service</option>
+                                 <option value="Privaet Service">Privaet Service</option>
+                                 <option value="Business">Business</option>
+                            </select><br><br>
+                        </td>
+                        <td>
+                            <span id="nmb"><b>Villege/House:</b></span>
+                        </td>
+                        <td>
+                            <input type="text" id="text01" size="30" name="pmvillege/house">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td>
+                        <td>
+                            <span id="nmb"><b>Road/Block/Sector:</b></span>
+                        </td>
+                        <td>
+                            <input type="text" id="text01" size="30" name="pmroad/block/sector">
+                        </td>
+                    </tr>
+                    <tr><td></td><td></td><td></td><td></td></tr>
+                    <tr>
+                         <td>
+                            <p id="smb"><b>Country</b></p>
+                            <span id="smb"><b>of birth:<span id="redit">*</span></b></span>
+                        </td>
+                        <td>
+                            <select  id="op01" name="birth_country">
+                                 <option value="Bangladesh" selected >Bangladesh</option>
+                                 <option value="Sewden">Sewden</option>
+                            </select><br><br>
+                        </td>
+                        <td>
+                            <span id="nmb"><b>District:<span id="redit">*</span></b></span><br><br>
+                        </td>
+                        <td>
+                            <select  id="op01" name="pmdistrict">
                                  <option hidden>-select-</option>
                                  <option value="Dhaka" >Dhaka</option>
                                  <option value="Kustia">Kustia</option>
@@ -331,6 +432,53 @@
                         </td>
                     </tr>
                     <tr><td></td><td></td><td></td><td></td></tr>
+                    <tr>
+                        <td>
+                            <span id="nmb"><b>Birth District:<span id="redit">*</span></b></span><br><br>
+                        </td>
+                        <td>
+                            <select  id="op01" name="pmdistrict">
+                                 <option hidden>-select-</option>
+                                 <option value="Dhaka" >Dhaka</option>
+                                 <option value="Kustia">Kustia</option>
+                                 <option value="Barishal">Barishal</option>
+                            </select><br><br>
+                        </td>
+                        <td>
+                            <span id="nmb"><b>Police Station:<span id="redit">*</span></b></span><br><br>
+                        </td>
+                        <td>
+                            <select  id="op01" name="pmpolice">
+                                 <option hidden></option>
+                                 <option value="Dhaka" >Dhaka</option>
+                                 <option value="Kustia">Kustia</option>
+                                 <option value="Barishal">Barishal</option>
+                            </select><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td>
+                        <td>
+                            <span id="nmb"><b>Post Office:<span id="redit">*</span></b></span><br><br>
+                        </td>
+                         <td>
+                            <select  id="op01" name="pmpostoffice">
+                                 <option hidden></option>
+                                 <option value="Dhaka" >Dhaka</option>
+                                 <option value="Kustia">Kustia</option>
+                                 <option value="Barishal">Barishal</option>
+                            </select><br><br>
+                        </td>
+                    </tr>
+                    <tr><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td></tr>
+                    <tr>
+                        <td></td><td></td>
+                        <td></td>
+                        <td align="right" >
+                            <input id="button01" type="submit" value="Save & Next" href="stage2.php">
+                       </td>
+                    </tr>
                 </table>
             </form>
     </div>
