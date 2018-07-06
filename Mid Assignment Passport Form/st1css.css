@@ -69,5 +69,17 @@
 {
     border-radius:5px;
     border:1px solid #D8D8D8;
-    width:210px;
+    width: 340px;
+}
+#text01
+{
+    border-radius:5px;
+    border:1px solid #D8D8D8;
+    width: 340px;
+}
+#text02
+{
+    border-radius:5px;
+    border:1px solid #D8D8D8;
+    width: 85px;
 }
