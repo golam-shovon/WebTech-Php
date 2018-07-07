@@ -81,7 +81,7 @@
     border:1px solid #D8D8D8;
     width: 85px;
 }
-#button01
+.button01
 {
     border-radius:4px;
     font-family: Arial, Helvetica, sans-serif;
@@ -89,4 +89,9 @@
 #table02
 {
     width:5%;
+}
+.redit1
+{
+    color: red;
+    font-style:italic;
 }

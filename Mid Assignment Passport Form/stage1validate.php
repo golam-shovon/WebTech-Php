@@ -1,0 +1,52 @@
+<?php
+    session_start();
+    if(isset($_POST['save']))
+    {
+        if(isset($_POST['gender']))
+        {
+            $_SESSION['g']=2;
+        }
+        else
+        {
+         $_SESSION['g']=1;
+        }
+        if(isset($_POST['dateofbirth']))
+        {
+            $_SESSION['db']=2;
+        }
+        else
+        {
+            $_SESSION['db']=1;
+        }
+        if(isset($_POST['app_place']))
+        {
+            $_SESSION['ap']=2;
+        }
+        else
+        {
+         $_SESSION['ap']=1;
+        }
+        if(isset($_POST['pass_type']))
+        {
+            $_SESSION['ps']=2;
+        }
+        else
+        {
+         $_SESSION['ps']=1;
+        }
+        if($_SESSION['g']==1||$_SESSION['db']==1||$_SESSION['ap']==1||$_SESSION['ps']==1)
+        {
+         header('Location:index.php');
+        }
+        else
+        {
+         header('Location:stage2.php');
+        }
+    }
+    else
+    {
+    
+        header('Location:stage2.php');
+        
+    }
+?>

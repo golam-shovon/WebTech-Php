@@ -9,9 +9,17 @@
     <h4 id="h2">Before filling up the online application form read the<div1 id="blueun"> guidelines</div1> carefully.<h4>
     <h5 id="h3">Fiels marked with<div2 id="redit"> (*)</div2>are mandetory.</h5>
     <hr id="marit">
+    <?php
+        session_start();
+        $_SESSION['g'];
+        $_SESSION['db'];
+        $_SESSION['ap'];
+        $_SESSION['ps'];
+
+    ?>
     <br>
     <div id="div02">
-            <form action="stage1store.php" method="post">
+            <form action="stage1validate.php" method="post">
                 <table id="table01">
                     <tr>
                         <td colspan="2">
@@ -21,7 +29,15 @@
                             <span id="nmb"><b>Date of Birth:<span id="redit">*</span></b></span>
                         </td>
                         <td>
-                            <input type="date" id="text01" size="30" name="dateofbirth">
+                            <p>
+                             <input type="date" id="text01" size="30" name="dateofbirth"><br>
+                             <?php
+                                 if($_SESSION['db']==1)
+                                 {
+                                     echo '<span >Please Input Birtdate</span>';
+                                 }
+                              ?>
+                            </p>  
                         </td>
                     </tr>
                     <tr>
@@ -33,20 +49,36 @@
                                  <option value="Bangladesh" selected>Bangladesh</option>
                                  <option value="Sewden">Sewden</option>
                             </select>
+                            <?php
+                                if($_SESSION['g']==1)
+                                {
+                                    echo '<span id="redit">Please Input Birtdate</span>';
+                                }
+                            	 ?>
                         </td>
                         <td rowspan="2">
-                             <span id="nmb"><b>Gender:<span id="redit">*</span></b></span>
+                            <span id="nmb"><b>Gender:<span id="redit">*</span></b></span>
+                           
                         </td>
                         <td rowspan="2">
-                            <input type="radio" name="gender" value="male" >Male<br>
-                            <input type="radio" name="gender" value="female"> Female<br>
-                            <input type="radio" name="gender" value="other"> Other  
+                            <p>
+                                <input type="radio" name="gender" value="male" >Male<br>
+                                <input type="radio" name="gender" value="female"> Female<br>
+                                <input type="radio" name="gender" value="other"> Other  
+                                <?php
+                                if($_SESSION['g']==1)
+                                {
+                                    echo '<span id="redit">Please Select Gender</span>';
+                                }
+                                ?>
+                            </p>
+                            
                         </td>   
                     </tr>
                     <tr><td></td><td></td><td></td><td></td></tr>
                     <tr>
                         <td>
-                            <span id="nmb"><b>Application Type:b></span>
+                            <span id="nmb"><b>Application Type:<b></span>
                         </td>
                         <td colspan=2 >
                             <select id="op01" name="app_type">
@@ -161,7 +193,7 @@
                     <tr>
                         <td>
                             <p id="smb">Second Part</p>
-                            <span id="smb">(surname):</span>
+                            <span id="smb">(surname)<span id="redit">*</span></span>
                         </td>
                         <td>
                             <input type="text" id="text01" size="30" name="surnnameofapplicant">
@@ -302,7 +334,7 @@
                     <tr><td></td><td></td><td></td><td></td></tr>
                     <tr>
                         <td >
-                            <span id="nmb"><b>Spouse's name:<span id="redit">*</span></b></span>
+                            <span id="nmb"><b>Spouse's name:</b></span>
                         </td>
                         <td >
                             <input type="text" id="text01" size="30" name="nameofspouse">
@@ -476,9 +508,10 @@
                     <tr><td></td><td></td><td></td><td></td></tr>
                     <tr>
                         <td></td><td></td>
-                        <td></td>
-                        <td align="right" >
-                            <input id="button01" type="submit" value="Save & Next">
+                        <td ></td>
+                         <td align="right" >
+                            <input class="button01" type="submit" value="SAVE NOW & CONTINUE IN THE FUTURE" name="sc">  
+                            <input class="button01" type="submit" value="Save & Next" name="save">  
                        </td>
                     </tr>
                 </table>

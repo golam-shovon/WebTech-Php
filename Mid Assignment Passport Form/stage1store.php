@@ -39,6 +39,7 @@
     $_SESSION['pmdistrict']=test_input($_POST['pmdistrict']);
     $_SESSION['birthdistrict']=test_input($_POST['birthdistrict']);
     $_SESSION['pmpolice']=test_input($_POST['pmpolice']);
+    $_SESSION['pmpostoffice']=test_input($_POST['pmpostoffice']);
     function test_input($data) 
     {
         $data = trim($data);
@@ -46,5 +47,5 @@
         $data = htmlspecialchars($data);
         return $data;
     }
-    header('Location:stage2.php');
+    header('Location:stage1validate.php');
 ?>
