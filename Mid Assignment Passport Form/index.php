@@ -15,6 +15,7 @@
         $_SESSION['db'];
         $_SESSION['ap'];
         $_SESSION['ps'];
+        $_SESSION['psv']=0;
 
     ?>
     <br>
@@ -88,15 +89,16 @@
                         </td>
                         <td rowspan=2>
                             <select id="op01" name="pass_type">
-                                <option value="N">-select-</option>
+                                 <option hidden value="t" >-select-</option>
                                  <option value="Normal" >Normal</option>
                                  <option value="Offical">Offical</option>
                                  <option value="Diplomatic">Diplomatic</option>
                             </select>
                             <?php
+                                 $_POST['pass_type']=$_SESSION['psv'];
                                  if($_SESSION['ps']==1)
                                  {
-                                    echo '<span id="redit">Please Input Passport Type</span>';
+                                    echo '<span id="redit">Please Select an option</span>';
                                  }
                               ?>
                         </td>
