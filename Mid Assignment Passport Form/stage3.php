@@ -6,12 +6,15 @@
 </head>
 <body>
     <h3 id="header">PASSPORT APPLICATION-STAGE 3</h3>
+    <?php
+        session_start();
+    ?>
     <h4 id="h2">Before filling up the online application form read the<div1 id="blueun"> guidelines</div1> carefully.<h4>
     <h5 id="h3">Fiels marked with<div2 id="redit"> (*)</div2>are mandetory.</h5>
     <hr id="marit">
     <br>
     <div id="div02">
-        <form action="stage4.php" method="post">
+        <form action="stage3store.php" method="post">
             <table id="table02">
                 <tr>
                     <td colspan="2">
@@ -99,7 +102,7 @@
                 <tr><td></td><td></td><td></td><td></td></tr>
                 <tr>
                     <td>
-                         <span id="nmb"><b>Name of Brand:</b></span><br>
+                         <span id="nmb"><b>Name of Branch:</b></span><br>
                     </td>
                     <td>
                         <select  id="op01" name="branch">
@@ -121,7 +124,7 @@
                 <td></td><td></td>
                 <td></td>
                 <td align="right" >
-                     <input id="button01" type="submit" value="Save & Next" href="stage2.php">
+                     <input id="button01" type="submit" value="Save & Next" >
                 </td>
             </tr>
         </table>

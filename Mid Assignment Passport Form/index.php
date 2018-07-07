@@ -11,7 +11,7 @@
     <hr id="marit">
     <br>
     <div id="div02">
-            <form action="stage2.php" method="post">
+            <form action="stage1store.php" method="post">
                 <table id="table01">
                     <tr>
                         <td colspan="2">
@@ -29,7 +29,7 @@
                         <span id="nmb"><b>Applying In<span id="redit">*</span></b></span>
                         </td>
                         <td>
-                            <select  id="op01" name="App_place">
+                            <select  id="op01" name="app_place">
                                  <option value="Bangladesh" selected>Bangladesh</option>
                                  <option value="Sewden">Sewden</option>
                             </select>
@@ -49,7 +49,7 @@
                             <span id="nmb"><b>Application Type:b></span>
                         </td>
                         <td colspan=2 >
-                            <select id="op01" name="App_type">
+                            <select id="op01" name="app_type">
                                  <option value="New" selected>New</option>
                                  <option value="Reissue">Reissue</option>
                             </select>
@@ -61,7 +61,7 @@
                             <span id="nmb"><b>Passport Type:<span id="redit">*</span></b></span>
                         </td>
                         <td rowspan=2>
-                            <select id="op01" name="Pass_type">
+                            <select id="op01" name="pass_type">
                                 <option hidden>-select-</option>
                                  <option value="Normal" >Normal</option>
                                  <option value="Offical">Offical</option>
@@ -142,7 +142,7 @@
                              <span id="nmb"><b>Email:<span id="redit">*</span></b></span>
                         </td>
                         <td>
-                            <input type="text" id="text01" size="30" name="email">    
+                            <input type="text" id="text01" size="30" name="appliemail">    
                         </td>
                     </tr>
                     <tr><td></td><td></td><td></td><td></td></tr>
@@ -176,7 +176,7 @@
                             <span id="nmb"><b>Nationality:<span id="redit">*</span></b></span><br><br>
                         </td>
                         <td>
-                            <select  id="op01" name="nationality_place">
+                            <select  id="op01" name="applinationality_place">
                                  <option value="Bangladesh" selected>Bangladesh</option>
                                  <option value="Sewden">Sewden</option>
                             </select><br><br>
@@ -187,7 +187,7 @@
                             <span id="nmb"><b>Citizenship Status:<span id="redit">*</span></b></span><br><br>
                         </td>
                         <td>
-                            <select  id="op01" name="citizenship_status">
+                            <select  id="op01" name="appli_citizenship_status">
                                  <option value="Birth" selected>Birth</option>
                                  <option value="Marriage">Marriage</option>
                             </select><br><br>
@@ -439,7 +439,7 @@
                             <span id="nmb"><b>Birth District:<span id="redit">*</span></b></span><br><br>
                         </td>
                         <td>
-                            <select  id="op01" name="pmdistrict">
+                            <select  id="op01" name="birthdistrict">
                                  <option hidden>-select-</option>
                                  <option value="Dhaka" >Dhaka</option>
                                  <option value="Kustia">Kustia</option>
@@ -478,7 +478,7 @@
                         <td></td><td></td>
                         <td></td>
                         <td align="right" >
-                            <input id="button01" type="submit" value="Save & Next" href="stage2.php">
+                            <input id="button01" type="submit" value="Save & Next">
                        </td>
                     </tr>
                 </table>
