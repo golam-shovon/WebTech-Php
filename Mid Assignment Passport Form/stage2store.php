@@ -24,5 +24,5 @@
         $data = htmlspecialchars($data);
         return $data;
     }
-    header('Location:stage2validate.php');
+    header('Location:stage3.php');
 ?>

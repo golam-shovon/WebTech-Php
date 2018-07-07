@@ -1,7 +1,7 @@
-<?php
-    session_start();
-    if(isset($_POST['save']))
-    {
+
+    <?php
+    
+   
         if(isset($_POST['gender']))
         {
             $_SESSION['g']=2;
@@ -220,18 +220,117 @@
         }
         if($_SESSION['g']==1||$_SESSION['db']==1||$_SESSION['ps']==1||$_SESSION['bd']==1||$_SESSION['hin']==1||$_SESSION['hcm']==1||$_SESSION['re']==1||$_SESSION['nam']==1||$_SESSION['apm']==1||$_SESSION['sp']==1||$_SESSION['gn']==1||$_SESSION['cit']==1||$_SESSION['fn']==1||$_SESSION['fp']==1||$_SESSION['mn']==1||$_SESSION['mni']==1||$_SESSION['mp']==1||$_SESSION['d']==1||$_SESSION['po']==1||$_SESSION['pos']==1||$_SESSION['mts']==1||$_SESSION['apf']==1||$_SESSION['brc']==1||$_SESSION['pmdis']==1||$_SESSION['bdd']==1||$_SESSION['pp']==1||$_SESSION['ppos']==1)
         {
-         header('Location:index.php');
+            $_SESSION['Flag 1']=1;
         }
-        if($_SESSION['g']==2 && $_SESSION['db']==2 && $_SESSION['ps']==2 && $_SESSION['bd']==2 && $_SESSION['hcm']==2 && $_SESSION['hin']==2&& $_SESSION['re']==2&& $_SESSION['nam']==2&& $_SESSION['apm']==2 && $_SESSION['sp']==2&& $_SESSION['gn']==2&& $_SESSION['cit']==2&& $_SESSION['fn']==2&& $_SESSION['fp']==2&& $_SESSION['mn']==2&& $_SESSION['mni']==2&& $_SESSION['mp']==2&& $_SESSION['d']==2&& $_SESSION['po']==2&& $_SESSION['pos']==2&& $_SESSION['mts']==2&& $_SESSION['apf']==2&& $_SESSION['brc']==2&& $_SESSION['pmdis']==2&& $_SESSION['bdd']==2&& $_SESSION['pp']==2&& $_SESSION['ppos']==2)
+        if(isset($_POST['emcontactname']))
         {
-         header('Location:stage2.php');
+            $_SESSION['emn']=2;
+        }
+        if(empty($_POST['emcontactname']))
+        {
+         $_SESSION['emn']=1;
+        }
+        if(isset($_POST['em_country']))
+        {
+            $_SESSION['emc']=2;
+        }
+        if(empty($_POST['em_country']))
+        {
+            $_SESSION['emc']=1;
+        }
+        if(isset($_POST['emdistrict']))
+        {
+            $_SESSION['emd']=2;
+        }
+        if(empty($_POST['emdistrict']))
+        {
+            $_SESSION['emd']=1;
+        }
+        if(isset($_POST['empolice']))
+        {
+            $_SESSION['emp']=2;
+        }
+        if(empty($_POST['empolice']))
+        {
+            $_SESSION['emp']=1;
+        }
+        if(isset($_POST['empostoffice']))
+        {
+            $_SESSION['empos']=2;
+        }
+        if(empty($_POST['empostoffice']))
+        {
+            $_SESSION['empos']=1;
+        }
+        if(isset($_POST['emcontactnot']))
+        {
+            $_SESSION['emcon']=2;
+        }
+        if(empty($_POST['emcontactno']))
+        {
+            $_SESSION['emcon']=1;
+        }
+        if(isset($_POST['ememail']))
+        {
+            $_SESSION['eme']=2;
+        }
+        if(empty($_POST['ememail']))
+        {
+            $_SESSION['eme']=1;
+        }
+        if(isset($_POST['emrelation']))
+        {
+            $_SESSION['emre']=2;
+        }
+        if(empty($_POST['emrelation']))
+        {
+            $_SESSION['emre']=1;
+        }
+        if($_SESSION['emn']==1||$_SESSION['emc']==1||$_SESSION['emd']==1||$_SESSION['emp']==1||$_SESSION['empos']==1||$_SESSION['emcon']==1||$_SESSION['eme']==1||$_SESSION['emre']==1)
+        {
+            $_SESSION['Flag 2']=1;
+        }
+        if(isset($_POST['currency']))
+        {
+            $_SESSION['ccn']=2;
+        }
+        if(empty($_POST['currency']))
+        {
+            $_SESSION['ccn']=1;
+        }
+        if(isset($_POST['amount']))
+        {
+            $_SESSION['ammn']=2;
+        }
+        if(empty($_POST['amount']))
+        {
+            $_SESSION['ammn']=1;
+        }
+        if(isset($_POST['emrelation']))
+        {
+            $_SESSION['emre']=2;
+        }
+        if(empty($_POST['paymentdate']))
+        {
+            $_SESSION['dap']=1;
+        }
+        if(isset($_POST['paymentdate']))
+        {
+            $_SESSION['dap']=2;
+        }
+        if(empty($_POST['receiptno']))
+        {
+            $_SESSION['rep']=1;
+        }
+        if(isset($_POST['receiptno']))
+        {
+            $_SESSION['rep']=2;
+        }
+        if($_SESSION['ccn']==1||$_SESSION['ammn']==1||$_SESSION['dap']==1||$_SESSION['rep']==1)
+        {
+            $_SESSION['Flag 3']=1;
         }
 
-    }
-    else
-    {
-    
-        header('Location:stage2.php');
         
-    }
+
 ?>
