@@ -34,7 +34,7 @@
                              <?php
                                  if($_SESSION['db']==1)
                                  {
-                                     echo '<span >Please Input Birtdate</span>';
+                                    echo '<span id="redit">Please Input Birthdate</span>';
                                  }
                               ?>
                             </p>  
@@ -49,12 +49,6 @@
                                  <option value="Bangladesh" selected>Bangladesh</option>
                                  <option value="Sewden">Sewden</option>
                             </select>
-                            <?php
-                                if($_SESSION['g']==1)
-                                {
-                                    echo '<span id="redit">Please Input Birtdate</span>';
-                                }
-                            	 ?>
                         </td>
                         <td rowspan="2">
                             <span id="nmb"><b>Gender:<span id="redit">*</span></b></span>
@@ -94,11 +88,17 @@
                         </td>
                         <td rowspan=2>
                             <select id="op01" name="pass_type">
-                                <option hidden>-select-</option>
+                                <option value="N">-select-</option>
                                  <option value="Normal" >Normal</option>
                                  <option value="Offical">Offical</option>
                                  <option value="Diplomatic">Diplomatic</option>
                             </select>
+                            <?php
+                                 if($_SESSION['ps']==1)
+                                 {
+                                    echo '<span id="redit">Please Input Passport Type</span>';
+                                 }
+                              ?>
                         </td>
                         <td>
                             <span id="nmb"><b>Birth  ID No:<span id="redit">*</span></b></span><br><br>
