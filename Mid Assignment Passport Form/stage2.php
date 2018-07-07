@@ -219,7 +219,8 @@
                     <td></td><td></td>
                     <td></td>
                     <td align="right" >
-                        <input id="button01" type="submit" value="Save & Next">
+                        <button class="button01" formaction="index.php">Previous Page</button>
+                        <input class="button01" type="submit" value="Save & Next" name="save">
                     </td>
                 </tr>
             </table>
