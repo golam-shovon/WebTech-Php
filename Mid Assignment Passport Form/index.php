@@ -89,13 +89,13 @@
                         </td>
                         <td rowspan=2>
                             <select id="op01" name="pass_type">
-                                 <option hidden value="t" >-select-</option>
+                                 <option value="" >-select-</option>
                                  <option value="Normal" >Normal</option>
                                  <option value="Offical">Offical</option>
                                  <option value="Diplomatic">Diplomatic</option>
                             </select>
                             <?php
-                                 $_POST['pass_type']=$_SESSION['psv'];
+                                 
                                  if($_SESSION['ps']==1)
                                  {
                                     echo '<span id="redit">Please Select an option</span>';

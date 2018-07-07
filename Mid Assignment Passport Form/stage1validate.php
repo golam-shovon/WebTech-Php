@@ -18,13 +18,13 @@
         {
             $_SESSION['db']=1;
         }
-        if($_SESSION['psv']=='N')
+        if(isset($_POST['pass_type']))
         {
             $_SESSION['ps']=2;
         }
-        if($_SESSION['psv']!=='N')
+        if(empty($_POST['pass_type']))
         {
-             $_SESSION['ps']=1;
+            $_SESSION['ps']=1;
         }
         if($_SESSION['g']==1||$_SESSION['db']==1||$_SESSION['ps']==1)
         {
