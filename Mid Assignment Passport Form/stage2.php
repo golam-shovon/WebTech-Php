@@ -195,7 +195,7 @@
                         <span id="nmb"><b>Email:</b></span>
                     </td>
                     <td>
-                         <input type="text" id="text01" size="30" name="ememail">
+                         <input type="email" id="text01" size="30" name="ememail">
                     </td>
                     <td></td><td></td>
                 </tr>

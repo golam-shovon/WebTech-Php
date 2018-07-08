@@ -165,7 +165,7 @@
                         </td>
                         <td>
                             
-                            <input type="text" id="text01" size="30" name="appliemail"<?php if(!empty($_SESSION['appliemail'])) echo "value=".$_SESSION['appliemail'];?>>
+                            <input type="email" id="text01" size="30" name="appliemail"<?php if(!empty($_SESSION['appliemail'])) echo "value=".$_SESSION['appliemail'];?>>
 
                       
                         </td>

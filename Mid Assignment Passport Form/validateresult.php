@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Stage 1</title>
+   <title>Error Check</title>
    <link rel="stylesheet"  href="st1css.css" > 
 </head>
 <body>
@@ -396,6 +396,186 @@
                 <tr></tr><tr></tr>
                 "; 
                 }
+                if($_SESSION['emn']==1)
+                {
+                  echo"
+                <tr>
+                    <td colspan='2'>
+                        <p id='nmb'><b>Input Applicant  Emergency Contact Name In Stage 2</b></p>
+                    </td>
+                    <td colspan='2'>
+                        <a href='stage2ver2.php' class='button01'>GO TO PAGE</a>
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                ";  
+                }
+                if($_SESSION['emc']==1)
+                {
+                  echo"
+                <tr>
+                    <td colspan='2'>
+                        <p id='nmb'><b>Input Applicant  Emergency Contact Country In Stage 2</b></p>
+                    </td>
+                    <td colspan='2'>
+                        <a href='stage2ver2.php' class='button01'>GO TO PAGE</a>
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                ";  
+                }
+                if($_SESSION['emd']==1)
+                {
+                  echo"
+                <tr>
+                    <td colspan='2'>
+                        <p id='nmb'><b>Input Applicant  Emergency Contact District In Stage 2</b></p>
+                    </td>
+                    <td colspan='2'>
+                        <a href='stage2ver2.php' class='button01'>GO TO PAGE</a>
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                ";  
+                }
+                if($_SESSION['emp']==1)
+                {
+                  echo"
+                <tr>
+                    <td colspan='2'>
+                        <p id='nmb'><b>Input Applicant  Emergency Contact Police Station In Stage 2</b></p>
+                    </td>
+                    <td colspan='2'>
+                        <a href='stage2ver2.php' class='button01'>GO TO PAGE</a>
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                ";  
+                }
+                if($_SESSION['empos']==1)
+                {
+                  echo"
+                <tr>
+                    <td colspan='2'>
+                        <p id='nmb'><b>Input Applicant  Emergency Contact Post Office In Stage 2</b></p>
+                    </td>
+                    <td colspan='2'>
+                        <a href='stage2ver2.php' class='button01'>GO TO PAGE</a>
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                ";  
+                }
+                if($_SESSION['emcon']==1)
+                {
+                  echo"
+                <tr>
+                    <td colspan='2'>
+                        <p id='nmb'><b>Input Applicant  Emergency Contact Phone Number In Stage 2</b></p>
+                    </td>
+                    <td colspan='2'>
+                        <a href='stage2ver2.php' class='button01'>GO TO PAGE</a>
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                ";  
+                }
+                if($_SESSION['eme']==1)
+                {
+                  echo"
+                <tr>
+                    <td colspan='2'>
+                        <p id='nmb'><b>Input Applicant  Emergency Contact Email In Stage 2</b></p>
+                    </td>
+                    <td colspan='2'>
+                        <a href='stage2ver2.php' class='button01'>GO TO PAGE</a>
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                ";  
+                }
+                if($_SESSION['emre']==1)
+                {
+                echo"
+                <tr>
+                    <td colspan='2'>
+                        <p id='nmb'><b>Input Applicant  Emergency Contact Relation In Stage 2</b></p>
+                    </td>
+                    <td colspan='2'>
+                        <a href='stage2ver2.php' class='button01'>GO TO PAGE</a>
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                ";  
+                }
+                if($_SESSION['Flag 3']==1)
+                {
+                    echo"
+                <tr>
+                    <td colspan='4'>
+                        <p id='blue'><b>Input Some Information Information In Stage 3</b></p>
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                "; 
+                }
+                if($_SESSION['ammn']==1 ||!is_numeric($_SESSION['amount']))
+                {
+                echo"
+                <tr>
+                    <td colspan='2'>
+                        <p id='nmb'><b>Input Amount In Stage 3</b></p>
+                    </td>
+                    <td colspan='2'>
+                        <a href='stage3ver2.php' class='button01'>GO TO PAGE</a>
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                ";  
+                }
+                if($_SESSION['dap']==1)
+                {
+                echo"
+                <tr>
+                    <td colspan='2'>
+                        <p id='nmb'><b>Input paymentdate In Stage 3</b></p>
+                    </td>
+                    <td colspan='2'>
+                        <a href='stage3ver2.php' class='button01'>GO TO PAGE</a>
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                ";  
+                }
+                if($_SESSION['rep']==1||!is_numeric($_SESSION['receiptno']))
+                {
+                echo"
+                <tr>
+                    <td colspan='2'>
+                        <p id='nmb'><b>Input Receipt Np In Stage 3</b></p>
+                    </td>
+                    <td colspan='2'>
+                        <a href='stage3ver2.php' class='button01'>GO TO PAGE</a>
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                ";  
+                }
+                if($_SESSION['Flag 3']!==1 && $_SESSION['Flag 2']!==2 && $_SESSION['Flag 1']!==2)
+                {
+                    echo"
+                <tr>
+                    <td colspan='3'>
+                        <p id='blue'><b>Show The Complete File</b></p>
+                    </td>
+                    <td>
+                        <a href='show.php' class='button01'>Show</a>
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                "; 
+                }
+
 
             ?>
           

@@ -198,7 +198,7 @@
                         <span id="nmb"><b>Email:</b></span>
                     </td>
                     <td>
-                        <input type="text" id="text01" size="30" name="ememail"<?php if(!empty($_SESSION['ememail'])) echo "value=".$_SESSION['ememail'];?>>
+                        <input type="email" id="text01" size="30" name="ememail"<?php if(!empty($_SESSION['ememail'])) echo "value=".$_SESSION['ememail'];?>>
                     </td>
                     <td></td><td></td>
                 </tr>

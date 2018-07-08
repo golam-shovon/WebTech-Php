@@ -155,7 +155,7 @@
                              <span id="nmb"><b>Email:<span id="redit">*</span></b></span>
                         </td>
                         <td>
-                            <input type="text" id="text01" size="30" name="appliemail"> 
+                            <input type="email" id="text01" size="30" name="appliemail"> 
                       
                         </td>
                     </tr>

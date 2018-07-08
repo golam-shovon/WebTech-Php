@@ -68,7 +68,7 @@
                             <span id="nmb"><b>Date of Payment:<span id="redit">*</span></b></span>
                         </td>
                         <td>
-                            <input type="text" id="text01" size="30" name="paymentdate">
+                            <input type="date" id="text01" size="30" name="paymentdate"><br>
                         </td>  
                     <td></td></td></td>
                 </tr>
