@@ -25,6 +25,12 @@
                         </td>
                         <td>
                             <input type="date" id="text01" size="30" name="dateofbirth"<?php if(!empty($_SESSION['dateofbirth'])) echo "value=".$_SESSION['dateofbirth'];?>>
+                            <?php
+                                if($_SESSION['db']==1)
+                                {
+                                echo"<span id='redit'><b>Input Information</b></span>";
+                                }
+                            ?>
                         </td>
                     </tr>
                     <tr>
@@ -46,6 +52,12 @@
                                 <input type="radio" name="gender" value="male"<?php if($_SESSION['gender']=='male') echo "checked"; ?> >Male<br>
                                 <input type="radio" name="gender" value="female"<?php if($_SESSION['gender']=='female') echo "checked"; ?>> Female<br>
                                 <input type="radio" name="gender" value="other"<?php if($_SESSION['gender']=='other') echo "checked"; ?>> Other  
+                                <?php
+                                if($_SESSION['g']==1)
+                                {
+                                echo"<span id='redit'><b>Input Information</b></span>";
+                                }
+                            ?>
                         
                             </p>
                             
@@ -74,6 +86,12 @@
                                  <option value="Normal"<?php if($_SESSION['pass_type']=='Normal')echo "selected"; ?>>Normal</option>
                                  <option value="Offical"<?php if($_SESSION['pass_type']=='Official')echo "selected"; ?>>Offical</option>
                                  <option value="Diplomatic"<?php if($_SESSION['pass_type']=='Diplomatic')echo "selected"; ?>>Diplomatic</option>
+                                 <?php
+                                if($_SESSION['ps']==1)
+                                {
+                                echo"<span id='redit'><b>Input Information</b></span>";
+                                }
+                            ?>
                             </select>
                         
                         </td>
@@ -82,8 +100,13 @@
                         </td>
                         <td>
                              <p>                         
-                                <input type="text" id="text01" size="30" name="birthidno"<?php if(!empty($_SESSION['birthidno'])) echo "value=".$_SESSION['birthidno'];?>>
-                          
+                                <input type="number" id="text01" size="30" name="birthidno" pattern = "[0-9]"<?php if(!empty($_SESSION['birthidno'])) echo "value=".$_SESSION['birthidno'];?>>
+                                <?php
+                                if($_SESSION['bd']==1)
+                                {
+                                echo"<span id='redit'><b>Input Information</b></span>";
+                                }
+                            ?>
                             </p> 
                         </td>
                     </tr>
@@ -93,7 +116,7 @@
                         </td>
                         <td>
                             
-                             <input type="text" id="text01" size="30" name="niidno"<?php if(!empty($_SESSION['niidno'])) echo "value=".$_SESSION['niidno'];?>>
+                             <input type="number" id="text01" size="30" name="niidno" pattern = "[0-9]"<?php if(!empty($_SESSION['niidno'])) echo "value=".$_SESSION['niidno'];?>>
                         </td>
                     </tr>
                     <tr><td></td><td></td><td></td><td></td></tr>
@@ -110,7 +133,7 @@
                         </td>
                         <td>
                              
-                             <input type="text" id="text01" size="30" name="taxidno"<?php if(!empty($_SESSION['taxidno'])) echo "value=".$_SESSION['taxidno'];?>>
+                             <input type="number" id="text01" size="30" name="taxidno" pattern = "[0-9]" <?php if(!empty($_SESSION['taxidno'])) echo "value=".$_SESSION['taxidno'];?>>
 
                         </td>
                     </tr>
@@ -125,12 +148,23 @@
                         <td>
                             <p>
                                 
-                                <input type="text" id="text01" size="30" name="height_cm"<?php if(!empty($_SESSION['height_cm'])) echo "value=".$_SESSION['height_cm'];?>>
-
+                                <input type="number" id="text01" size="30" name="height_cm" pattern = "[0-9]"<?php if(!empty($_SESSION['height_cm'])) echo "value=".$_SESSION['height_cm'];?>>
+                                <?php
+                                if($_SESSION['hcm']==1)
+                                {
+                                echo"<span id='redit'><b>Input Information</b></span>";
+                                }
+                            ?>
                                 <span id="nmb">cm</span>
                                 
-                                <input type="text" id="text01" size="30" name="height_inch"<?php if(!empty($_SESSION['height_inch'])) echo "value=".$_SESSION['height_inch'];?>>
+                                <input type="number" id="text01" size="30" name="height_inch" pattern = "[0-9]"<?php if(!empty($_SESSION['height_inch'])) echo "value=".$_SESSION['height_inch'];?>>
                                 <span id="nmb">inch</span>
+                                <?php
+                                if($_SESSION['hin']==1)
+                                {
+                                echo"<span id='redit'><b>Input Information</b></span>";
+                                }
+                            ?>
                             
                             </p>
                         </td>
@@ -145,7 +179,14 @@
                                  <option value="Islam" <?php if($_SESSION['religion']=='Islam')echo "selected"; ?>>Islam</option>
                                  <option value="Chrishtian"<?php if($_SESSION['religion']=='Chrishtian')echo "selected"; ?>>Chrishtian</option>
                                  <option value="Hindu"<?php if($_SESSION['religion']=='Hindu')echo "selected"; ?>>Hindu</option>
-                            </select> 
+                               
+                            </select>
+                            <?php
+                                if($_SESSION['re']==1)
+                                {
+                                echo"<span id='redit'><b>Select Religion</b></span>";
+                                }
+                            ?>
                          
                         </td>
                     </tr>
@@ -157,8 +198,13 @@
                         </td>
                         <td>
                             
-                            <input type="text" id="text01" size="30" name="nameofapplicant"<?php if(!empty($_SESSION['nameofapplicant'])) echo "value=".$_SESSION['nameofapplicant'];?>>
-                        
+                            <input type="text" id="text01" size="30" name="nameofapplicant" pattern = "[a-zA-Z]*"<?php if(!empty($_SESSION['nameofapplicant'])) echo "value=".$_SESSION['nameofapplicant'];?>>
+                            <?php
+                                if($_SESSION['nam']==1)
+                                {
+                                echo"<span id='redit'><b>Input Name</b></span>";
+                                }
+                            ?>
                         </td>
                         <td>
                              <span id="nmb"><b>Email:<span id="redit">*</span></b></span>
@@ -166,7 +212,12 @@
                         <td>
                             
                             <input type="email" id="text01" size="30" name="appliemail"<?php if(!empty($_SESSION['appliemail'])) echo "value=".$_SESSION['appliemail'];?>>
-
+                            <?php
+                                if($_SESSION['apm']==1)
+                                {
+                                echo"<span id='redit'><b>Input Email</b></span>";
+                                }
+                            ?>
                       
                         </td>
                     </tr>
@@ -177,7 +228,7 @@
                             <span id="smb"><b>Name):</b></span>
                         </td>
                         <td>
-                            <input type="text" id="text01" size="30" name="givennameofapplicant"<?php if(!empty($_SESSION['givennameofapplicant'])) echo "value=".$_SESSION['givennameofapplicant'];?>>
+                            <input type="text" id="text01" size="30" name="givennameofapplicant" pattern = "[a-zA-Z]*"<?php if(!empty($_SESSION['givennameofapplicant'])) echo "value=".$_SESSION['givennameofapplicant'];?>>
                         </td>
                         <td colspan="2" rowspan="2">
                             <p id="blue"><b>Citizenship Information</b></p> 
@@ -189,8 +240,13 @@
                             <span id="smb">(surname)<span id="redit">*</span></span>
                         </td>
                         <td>
-                            <input type="text" id="text01" size="30" name="surnnameofapplicant"<?php if(!empty($_SESSION['surnnameofapplicant'])) echo "value=".$_SESSION['surnnameofapplicant'];?>>
-
+                            <input type="text" id="text01" size="30" name="surnnameofapplicant" pattern = "[a-zA-Z]*"<?php if(!empty($_SESSION['surnnameofapplicant'])) echo "value=".$_SESSION['surnnameofapplicant'];?>>
+                            <?php
+                                if($_SESSION['sp']==1)
+                                {
+                                echo"<span id='redit'><b>Input surname</b></span>";
+                                }
+                            ?>
                          
                         </td>
                     </tr>
@@ -206,6 +262,7 @@
                             <select  id="op01" name="applinationality_place">
                                 <option value="Bangladesh" <?php if($_SESSION['applinationality_place']=='Bangladesh')echo "selected"; ?>>Bangladesh</option>
                                  <option value="Sewden"<?php if($_SESSION['applinationality_place']=='Sewden')echo "selected"; ?>>Sewden</option>
+                            
                             </select><br><br>
                         </td>
                     </tr>
@@ -226,8 +283,13 @@
                             <span id="nmb"><b>Father's name::<span id="redit">*</span></b></span>
                         </td>
                         <td>
-                            <input type="text" id="text01" size="30" name="nameoffather"<?php if(!empty($_SESSION['nameoffather'])) echo "value=".$_SESSION['nameoffather'];?>>
-
+                            <input type="text" id="text01" size="30" name="nameoffather" pattern = "[a-zA-Z]*"<?php if(!empty($_SESSION['nameoffather'])) echo "value=".$_SESSION['nameoffather'];?>>
+                            <?php
+                                if($_SESSION['gn']==1)
+                                {
+                                echo"<span id='redit'><b>Input Father Name</b></span>";
+                                }
+                            ?>
                            
                         </td>
                         <td>
@@ -236,7 +298,12 @@
                         <td>
                             <input type="radio" name="citizen_ship_type" value="Yes"<?php if($_SESSION['citizen_ship_type']=='Yes') echo "checked"; ?>>Yes<br>
                             <input type="radio" name="citizen_ship_type" value="No"<?php if($_SESSION['citizen_ship_type']=='No') echo "checked"; ?>> No<br>
-                          
+                            <?php
+                                if($_SESSION['cit']==1)
+                                {
+                                echo"<span id='redit'><b>Select Citizen Ship Type</b></span>";
+                                }
+                            ?>
                         </td>
                     </tr>
                     <tr><td></td><td></td><td></td><td></td></tr>
@@ -267,8 +334,14 @@
                                  <option value="Government Service" <?php if($_SESSION['father_profession']=='Government Service')echo "selected"; ?>>Government Service</option>
                                  <option value="Privet Service"<?php if($_SESSION['father_profession']=='Privet Service')echo "selected"; ?>>Privet Service</option>
                                  <option value="Business"<?php if($_SESSION['father_profession']=='Business')echo "selected"; ?>>Business</option>
+                           
                             </select><br><br>
-                         
+                          <?php
+                            if($_SESSION['fp']==1)
+                                {
+                                echo"<span id='redit'><b>Input Father Profession</b></span>";
+                                }
+                            ?>
                         </td>
                     </tr>
                     <tr><td></td><td></td><td></td><td></td></tr>
@@ -278,8 +351,13 @@
                            
                         </td>
                         <td>
-                            <input type="text" id="text01" size="30" name="nameofmother"<?php if(!empty($_SESSION['nameofmother'])) echo "value=".$_SESSION['nameofmother'];?>>
-
+                            <input type="text" id="text01" size="30" name="nameofmother" pattern = "[a-zA-Z]*"<?php if(!empty($_SESSION['nameofmother'])) echo "value=".$_SESSION['nameofmother'];?>>
+                            <?php
+                                    if($_SESSION['mn']==1)
+                                {
+                                echo"<span id='redit'><b>Input Mother Name</b></span>";
+                                }
+                            ?>
                           
                         </td>
                         <td>
@@ -325,6 +403,12 @@
                                  <option value="Privet Service"<?php if($_SESSION['mother_profession']=='Privet Service')echo "selected"; ?>>Privet Service</option>
                                  <option value="Business"<?php if($_SESSION['mother_profession']=='Business')echo "selected"; ?>>Business</option>
                             </select><br><br>
+                            <?php
+                                    if($_SESSION['mp']==1)
+                                {
+                                echo"<span id='redit'><b>Input Mother Profession</b></span>";
+                                }
+                            ?>
                           
                         </td>
                         <td>
@@ -337,6 +421,12 @@
                                  <option value="Kustia"<?php if($_SESSION['district']=='kustia')echo "selected"; ?>>Kustia</option>
                                  <option value="Barishal"<?php if($_SESSION['district']=='Barishal')echo "selected"; ?>>Barishal</option>
                             </select><br><br>
+                            <?php
+                                    if($_SESSION['d']==1)
+                                {
+                                echo"<span id='redit'><b>Select District</b></span>";
+                                }
+                            ?>
                           
                         </td>
                     </tr>
@@ -346,7 +436,7 @@
                             <span id="nmb"><b>Spouse's name:</b></span>
                         </td>
                         <td >
-                            <input type="text" id="text01" size="30" name="nameofspouse"<?php if(!empty($_SESSION['nameofspouse'])) echo "value=".$_SESSION['nameofspouse'];?>>
+                            <input type="text" id="text01" size="30" name="nameofspouse" pattern = "[a-zA-Z]*"<?php if(!empty($_SESSION['nameofspouse'])) echo "value=".$_SESSION['nameofspouse'];?>>
 
                         </td>
                         <td>
@@ -359,7 +449,12 @@
                                  <option value="Kustia"<?php if($_SESSION['police']=='kustia')echo "selected"; ?>>Kustia</option>
                                  <option value="Barishal"<?php if($_SESSION['police']=='Barishal')echo "selected"; ?>>Barishal</option>
                             </select><br><br>
-                          
+                            <?php
+                                    if($_SESSION['po']==1)
+                                {
+                                echo"<span id='redit'><b>Select Police Station</b></span>";
+                                }
+                            ?>
                         </td>
                     </tr>
                     <tr>
@@ -374,6 +469,12 @@
                                  <option value="Kustia"<?php if($_SESSION['postoffice']=='kustia')echo "selected"; ?>>Kustia</option>
                                  <option value="Barishal"<?php if($_SESSION['postoffice']=='Barishal')echo "selected"; ?>>Barishal</option>
                             </select><br><br>
+                            <?php
+                                    if($_SESSION['pos']==1)
+                                {
+                                echo"<span id='redit'><b>Select Post Office</b></span>";
+                                }
+                            ?>
                           
                         </td>
                     </tr>
@@ -418,6 +519,12 @@
                                  <option value="Married"<?php if($_SESSION['marital_status']=='Married')echo "selected"; ?> >Married</option>
                                  <option value="Single"<?php if($_SESSION['marital_status']=='Single')echo "selected"; ?>>Single</option>
                             </select><br><br>
+                            <?php
+                                    if($_SESSION['mts']==1)
+                                {
+                                echo"<span id='redit'><b>Select Status</b></span>";
+                                }
+                            ?>
                            
                         </td>
                         <td colspan="2">
@@ -436,6 +543,12 @@
                                  <option value="Privet Service"<?php if($_SESSION['applicant_profession']=='Privet Service')echo "selected"; ?>>Privet Service</option>
                                  <option value="Business"<?php if($_SESSION['applicant_profession']=='Business')echo "selected"; ?>>Business</option>
                             </select><br><br>
+                            <?php
+                                    if($_SESSION['apf']==1)
+                                {
+                                echo"<span id='redit'><b>Select Profession</b></span>";
+                                }
+                            ?>
                           
                         </td>
                         <td>
@@ -479,6 +592,12 @@
                                  <option value="Kustia"<?php if($_SESSION['pmdistrict']=='kustia')echo "selected"; ?>>Kustia</option>
                                  <option value="Barishal"<?php if($_SESSION['pmdistrict']=='Barishal')echo "selected"; ?>>Barishal</option>
                             </select><br><br>
+                            <?php
+                                    if($_SESSION['pmdis']==1)
+                                {
+                                echo"<span id='redit'><b>Select District</b></span>";
+                                }
+                            ?>
                            
                         </td>
                     </tr>
@@ -494,6 +613,12 @@
                                  <option value="Kustia"<?php if($_SESSION['birthdistrict']=='kustia')echo "selected"; ?>>Kustia</option>
                                  <option value="Barishal"<?php if($_SESSION['birthdistrict']=='Barishal')echo "selected"; ?>>Barishal</option>
                             </select><br><br>
+                            <?php
+                                    if($_SESSION['bdd']==1)
+                                {
+                                echo"<span id='redit'><b>Select District</b></span>";
+                                }
+                            ?>
                           
                         </td>
                         <td>
@@ -506,6 +631,12 @@
                                  <option value="Kustia"<?php if($_SESSION['pmpolice']=='kustia')echo "selected"; ?>>Kustia</option>
                                  <option value="Barishal"<?php if($_SESSION['pmpolice']=='Barishal')echo "selected"; ?>>Barishal</option>
                             </select><br><br>
+                            <?php
+                                    if($_SESSION['pp']==1)
+                                {
+                                echo"<span id='redit'><b>Select Police Station</b></span>";
+                                }
+                            ?>
                            
                         </td>
                     </tr>
@@ -521,6 +652,12 @@
                                  <option value="Kustia"<?php if($_SESSION['pmpostoffice']=='kustia')echo "selected"; ?>>Kustia</option>
                                  <option value="Barishal"<?php if($_SESSION['pmpostoffice']=='Barishal')echo "selected"; ?>>Barishal</option>
                             </select><br><br>
+                            <?php
+                                    if($_SESSION['ppos']==1)
+                                {
+                                echo"<span id='redit'><b>Select Post Office</b></span>";
+                                }
+                            ?>
                            
                         </td>
                     </tr>

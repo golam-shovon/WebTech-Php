@@ -277,8 +277,6 @@
                     </tr>
                 </table>    
             </div>
-            <?php
-            sess
-            ?>                                       
+                                               
     </body>
 </html>

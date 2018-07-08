@@ -80,6 +80,15 @@
     border:1px solid #D8D8D8;
     width: 340px;
 }
+#number01
+{
+    border-radius:5px;
+    border:1px solid #D8D8D8;
+    width: 340px;
+  -webkit-appearance: none; 
+  margin:0; 
+}
+
 #text02
 {
     border-radius:5px;

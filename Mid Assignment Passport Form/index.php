@@ -81,7 +81,7 @@
                         </td>
                         <td>
                              <p>
-                                 <input type="text" id="text01" size="30" name="birthidno"><br><br>
+                                 <input type="number" id="text01" size="30" name="birthidno" pattern = "[0-9]"><br><br>
                           
                             </p> 
                         </td>
@@ -91,7 +91,7 @@
                              <span id="nmb"><b>National ID No:</b></span>
                         </td>
                         <td>
-                             <input type="text" id="text01" size="30" name="niidno">
+                             <input type="number" id="text01" size="30" name="niidno" pattern = "[0-9]">
                         </td>
                     </tr>
                     <tr><td></td><td></td><td></td><td></td></tr>
@@ -107,7 +107,7 @@
                             <span id="nmb"><b>Tax Id No:</b></span>
                         </td>
                         <td>
-                             <input type="text" id="text01" size="30" name="taxidno">
+                             <input type="number" id="text01" size="30" name="taxidno"pattern = "[0-9]">
                         </td>
                     </tr>
                     <tr><td></td><td></td><td></td><td></td></tr>
@@ -120,9 +120,9 @@
                         </td>
                         <td>
                             <p>
-                                <input type="text" id="text02" size="30" name="height_cm">
+                                <input type="number" id="text02" size="30" name="height_cm"pattern = "[0-9]">
                                 <span id="nmb">cm</span>
-                                <input type="text" id="text02" size="30" name="height_inch">
+                                <input type="number" id="text02" size="30" name="height_inch"pattern = "[0-9]">
                                 <span id="nmb">inch</span>
                             
                             </p>
@@ -149,7 +149,7 @@
                             <span id="smb">applicant:<span id="redit">*</span></span>
                         </td>
                         <td>
-                            <input type="text" id="text01" size="30" name="nameofapplicant">
+                            <input type="text" id="text01" size="30" name="nameofapplicant" pattern = "[a-zA-Z]*">
                         
                         </td>
                         <td>
@@ -167,7 +167,7 @@
                             <span id="smb"><b>Name):</b></span>
                         </td>
                         <td>
-                            <input type="text" id="text01" size="30" name="givennameofapplicant">
+                            <input type="text" id="text01" size="30" name="givennameofapplicant" pattern = "[a-zA-Z]*">
                         </td>
                         <td colspan="2" rowspan="2">
                             <p id="blue"><b>Citizenship Information</b></p> 
@@ -179,7 +179,7 @@
                             <span id="smb">(surname)<span id="redit">*</span></span>
                         </td>
                         <td>
-                            <input type="text" id="text01" size="30" name="surnnameofapplicant">
+                            <input type="text" id="text01" size="30" name="surnnameofapplicant" pattern = "[a-zA-Z]*">
                          
                         </td>
                     </tr>
@@ -215,7 +215,7 @@
                             <span id="nmb"><b>Father's name::<span id="redit">*</span></b></span>
                         </td>
                         <td>
-                            <input type="text" id="text01" size="30" name="nameoffather">
+                            <input type="text" id="text01" size="30" name="nameoffather" pattern = "[a-zA-Z]*">
                            
                         </td>
                         <td>
@@ -266,7 +266,7 @@
                            
                         </td>
                         <td>
-                            <input type="text" id="text01" size="30" name="nameofmother">
+                            <input type="text" id="text01" size="30" name="nameofmother" pattern = "[a-zA-Z]*">
                           
                         </td>
                         <td>
@@ -331,7 +331,7 @@
                             <span id="nmb"><b>Spouse's name:</b></span>
                         </td>
                         <td >
-                            <input type="text" id="text01" size="30" name="nameofspouse">
+                            <input type="text" id="text01" size="30" name="nameofspouse" pattern = "[a-zA-Z]*">
                         </td>
                         <td>
                             <span id="nmb"><b>Police Station:<span id="redit">*</span></b></span><br><br>
@@ -518,7 +518,12 @@
                        </td>
                     </tr>
                 </table>
+                function place()
+            
+                
+            
             </form>
+            
     </div>
    
 </body>
