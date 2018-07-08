@@ -124,7 +124,8 @@
                 <td></td><td></td>
                 <td></td>
                 <td align="right" >
-                     <input id="button01" type="submit" value="Save & Next" >
+                    <button class="button01" formaction="stage2ver2.php">Previous Page</button>
+                    <input id="button01" type="submit" value="Save & Next" >
                 </td>
             </tr>
         </table>

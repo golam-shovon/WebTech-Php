@@ -1,8 +1,6 @@
 
-    <?php
-    
-   
-        if(isset($_POST['gender']))
+<?php
+            if(isset($_POST['gender']))
         {
             $_SESSION['g']=2;
         }
@@ -330,7 +328,7 @@
         {
             $_SESSION['Flag 3']=1;
         }
-
+        header("validateresult.php");
+?>
         
 
-?>

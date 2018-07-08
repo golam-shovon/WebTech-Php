@@ -10,6 +10,9 @@
     <h5 id="h3">Fiels marked with<div2 id="redit"> (*)</div2>are mandetory.</h5>
     <hr id="marit">
     <br>
+    <?php 
+     session_start();
+    ?>
     <div id="div02">
             <form action="stage1store.php" method="post">
                 <table id="table01">

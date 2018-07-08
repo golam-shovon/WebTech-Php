@@ -3,6 +3,7 @@
     $_SESSION['dateofbirth']=test_input($_POST['dateofbirth']);
     $_SESSION['app_place']=test_input($_POST['app_place']);
     $_SESSION['gender']=test_input($_POST['gender']);
+    $_SESSION['app_type']=test_input($_POST['app_type']);
     $_SESSION['pass_type']=test_input($_POST['pass_type']);
     $_SESSION['birthidno']=test_input($_POST['birthidno']);
     $_SESSION['niidno']=test_input($_POST['niidno']);
@@ -32,6 +33,7 @@
     $_SESSION['postoffice']=test_input($_POST['postoffice']);
     $_SESSION['spouse_nationality']=test_input($_POST['spouse_nationality']);
     $_SESSION['spouse_profession']=test_input($_POST['spouse_profession']);
+    $_SESSION['marital_status']=test_input($_POST['marital_status']);
     $_SESSION['applicant_profession']=test_input($_POST['applicant_profession']);
     $_SESSION['pmvillege/house']=test_input($_POST['pmvillege/house']);
     $_SESSION['pmroad/block/sector']=test_input($_POST['pmroad/block/sector']);
