@@ -6,7 +6,7 @@
             #p01
             {
                 font-family: Arial, Helvetica, sans-serif;
-                font-size:100px;
+                font-size:10px;
                 
                 text-align:center;
             }
