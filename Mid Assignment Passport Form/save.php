@@ -27,7 +27,7 @@
     $txt=$txt."Bramch Name: ".$_SESSION['branch'].chr(13).chr(10);
     fwrite($myfile, $txt);
     fclose($myfile);
-    
+ 
     ?>
     <!DOCTYPE html>
     <html>

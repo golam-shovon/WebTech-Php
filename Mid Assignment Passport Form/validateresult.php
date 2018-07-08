@@ -508,59 +508,63 @@
                 <tr></tr><tr></tr>
                 ";  
                 }
-                if($_SESSION['Flag 3']==1)
+                if(empty($_POST['skippay']))
                 {
                     echo"
-                <tr>
-                    <td colspan='4'>
+                     <tr>
+                         <td colspan='4'>
                         <p id='blue'><b>Input Some Information Information In Stage 3</b></p>
-                    </td>
-                </tr>
-                <tr></tr><tr></tr>
-                "; 
-                }
-                if($_SESSION['ammn']==1 ||!is_numeric($_SESSION['amount']))
-                {
-                echo"
-                <tr>
-                    <td colspan='2'>
-                        <p id='nmb'><b>Input Amount In Stage 3</b></p>
-                    </td>
-                    <td colspan='2'>
-                        <a href='stage3ver2.php' class='button01'>GO TO PAGE</a>
-                    </td>
-                </tr>
-                <tr></tr><tr></tr>
-                ";  
-                }
-                if($_SESSION['dap']==1)
-                {
-                echo"
-                <tr>
-                    <td colspan='2'>
-                        <p id='nmb'><b>Input paymentdate In Stage 3</b></p>
-                    </td>
-                    <td colspan='2'>
-                        <a href='stage3ver2.php' class='button01'>GO TO PAGE</a>
-                    </td>
-                </tr>
-                <tr></tr><tr></tr>
-                ";  
-                }
-                if($_SESSION['rep']==1||!is_numeric($_SESSION['receiptno']))
-                {
-                echo"
-                <tr>
-                    <td colspan='2'>
-                        <p id='nmb'><b>Input Receipt Np In Stage 3</b></p>
-                    </td>
-                    <td colspan='2'>
-                        <a href='stage3ver2.php' class='button01'>GO TO PAGE</a>
-                    </td>
-                </tr>
-                <tr></tr><tr></tr>
-                ";  
-                }
+                     </td>
+                     </tr>
+                    <tr></tr><tr></tr>
+                     "; 
+                    if($_SESSION['ammn']==1 ||!is_numeric($_SESSION['amount']))
+                    {
+                    echo"
+                    <tr>
+                        <td colspan='2'>
+                            <p id='nmb'><b>Input Amount In Stage 3</b></p>
+                        </td>
+                        <td colspan='2'>
+                             <a href='stage3ver2.php' class='button01'>GO TO PAGE</a>
+                        </td>
+                    </tr>
+                    <tr></tr><tr></tr>
+                         ";  
+                     }
+                        if($_SESSION['dap']==1)
+                        {
+                        echo"
+                        <tr>
+                            <td colspan='2'>
+                                <p id='nmb'><b>Input paymentdate In Stage 3</b></p>
+                            </td>
+                            <td colspan='2'>
+                                <a href='stage3ver2.php' class='button01'>GO TO PAGE</a>
+                            </td>
+                        </tr>
+                        <tr></tr><tr></tr>
+                        ";  
+                        }
+                
+                        if($_SESSION['rep']==1||!is_numeric($_SESSION['receiptno']))
+                        {
+                        echo"
+                        <tr>
+                            <td colspan='2'>
+                                <p id='nmb'><b>Input Receipt Np In Stage 3</b></p>
+                            </td>
+                            <td colspan='2'>
+                                <a href='stage3ver2.php' class='button01'>GO TO PAGE</a>
+                            </td>
+                        </tr>
+                        <tr></tr><tr></tr>
+                        ";  
+                        }
+                    }
+                    
+                
+                
                  
                 echo"
                 <tr>

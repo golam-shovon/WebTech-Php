@@ -293,6 +293,14 @@
         {
             $_SESSION['ccn']=2;
         }
+        if(empty($_SESSION['skippay']))
+        {
+            $_SESSION['skp']=1;
+        }
+        if(isset($_SESSION['skippay']))
+        {
+            $_SESSION['skp']=2;
+        }
         if(empty($_SESSION['currency']))
         {
             $_SESSION['ccn']=1;

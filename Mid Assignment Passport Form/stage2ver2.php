@@ -52,7 +52,7 @@
                         <span id="nmb"><b>Place of Issue:</b></span>
                     </td>
                     <td>
-                        <input type="text" id="text01" size="30" name="placeofissue"<?php if(!empty($_SESSION['placeofissue'])) echo "value=".$_SESSION['placeofissue'];?>>
+                        <input type="text" id="text01" size="30" name="placeofissue" <?php if(!empty($_SESSION['placeofissue'])) echo "value=".$_SESSION['placeofissue'];?>>
 
                     </td>
                 </tr>
@@ -68,7 +68,7 @@
                         <span id="nmb"><b>Date of Issue:</b></span>
                     </td>
                     <td>
-                        <input type="text" id="text01" size="30" name="dateofissue"<?php if(!empty($_SESSION['dateofissue'])) echo "value=".$_SESSION['dateofissue'];?>>
+                        <input type="date" id="text01" size="30" name="dateofissue"<?php if(!empty($_SESSION['dateofissue'])) echo "value=".$_SESSION['dateofissue'];?>>
 
                     </td>
                 </tr>
@@ -94,8 +94,15 @@
                         <span id="nmb"><b>Name:<span id="redit">*</span></b></span>
                     </td>
                     <td>
-                         <input type="text" id="text01" size="30" name="emcontactname"<?php if(!empty($_SESSION['emcontactname'])) echo "value=".$_SESSION['emcontactname'];?>>
+                         <input type="text" id="text01" size="30" name="emcontactname" <?php if(!empty($_SESSION['emcontactname'])) echo "value=".$_SESSION['emcontactname'];?>>
+                         <?php
+                                if(empty($_SESSION['emcontactname']))
+                                {
+                                echo"<span id='redit'><b>Input Name </b></span>";
+                                }
+                        ?>
                     </td>
+
                     <td></td><td></td>
                 </tr>
                 <tr>
@@ -153,6 +160,12 @@
                             <option value="Kustia"<?php if($_SESSION['emdistrict']=='kustia')echo "selected"; ?>>Kustia</option>
                             <option value="Barishal"<?php if($_SESSION['emdistrict']=='Barishal')echo "selected"; ?>>Barishal</option>
                         </select><br><br>
+                        <?php
+                                if(empty($_SESSION['emdistrict']))
+                                {
+                                echo"<span id='redit'><b>Select District </b></span>";
+                                }
+                        ?>
                     </td>   
                     <td></td><td></td> 
                 </tr>
@@ -167,6 +180,12 @@
                             <option value="Kustia"<?php if($_SESSION['empolice']=='kustia')echo "selected"; ?>>Kustia</option>
                             <option value="Barishal"<?php if($_SESSION['empolice']=='Barishal')echo "selected"; ?>>Barishal</option>
                         </select><br><br>
+                        <?php
+                                 if(empty($_SESSION['empolice']))
+                                {
+                                echo"<span id='redit'><b>Select Police Station</b></span>";
+                                }
+                        ?>
                     </td> 
                     <td></td><td></td>  
                 </tr>
@@ -181,6 +200,13 @@
                             <option value="Kustia"<?php if($_SESSION['empostoffice']=='kustia')echo "selected"; ?>>Kustia</option>
                             <option value="Barishal"<?php if($_SESSION['empostoffice']=='Barishal')echo "selected"; ?>>Barishal</option>
                          </select><br><br>
+                         <?php
+                                  if(empty($_SESSION['empostoffice']))
+
+                                {
+                                echo"<span id='redit'><b>Select Post Office </b></span>";
+                                }
+                        ?>
                      </td>
                      <td></td><td></td>
                 </tr>
@@ -191,6 +217,12 @@
                     <td>
                          <input type="text" id="text01" size="30" name="emcontactno"<?php if(!empty($_SESSION['emcontactno'])) echo "value=".$_SESSION['emcontactno'];?>>
                     </td>
+                    <?php
+                                if(empty($_SESSION['emcontactno']))
+                                {
+                                echo"<span id='redit'><b>Input Contact Number </b></span>";
+                                }
+                        ?>
                     <td></td><td></td>
                 </tr>
                 <tr>
@@ -199,6 +231,12 @@
                     </td>
                     <td>
                         <input type="email" id="text01" size="30" name="ememail"<?php if(!empty($_SESSION['ememail'])) echo "value=".$_SESSION['ememail'];?>>
+                        <?php
+                                  if(empty($_SESSION['ememail']))
+                                {
+                                echo"<span id='redit'><b>Input Email</b></span>";
+                                }
+                        ?>
                     </td>
                     <td></td><td></td>
                 </tr>
@@ -216,6 +254,12 @@
                            ?> >Mother</option>
                              
                          </select><br><br>
+                         <?php
+                                  if(empty($_SESSION['emrelation']))
+                                {
+                                echo"<span id='redit'><b>Select Relation </b></span>";
+                                }
+                        ?>
                      </td>
                      <td></td><td></td>
                 </tr>

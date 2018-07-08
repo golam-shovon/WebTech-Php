@@ -40,7 +40,7 @@
                 <tr><td></td><td></td><td></td><td></td></tr>
                 <tr>
                     <td >
-                        <p id="nmb"><b><input type="checkbox" name="skippay" value="yesskip">Skip Payement</b></p>
+                        <p id="nmb"><b><input type="checkbox" name="skippay" value="skippay">Skip Payement</b></p>
                     </td>
                     <td></td><td></td>
                 </tr>

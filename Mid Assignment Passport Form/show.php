@@ -219,7 +219,7 @@
                          <td></td><td></td><td></td>                                                                         
                         <td>
                             <span id="nmb"><b>Payment Amount:</b></span>
-                            <b><?php echo "(".$_SESSION['currency'].")".$_SESSION['ammn'];?></b>
+                            <b><?php echo "(".$_SESSION['currency'].")".$_SESSION['amount'];?></b>
                         </td> 
                     </tr>                       
                     <tr><td></td><td></td><td></td><td></td></tr>

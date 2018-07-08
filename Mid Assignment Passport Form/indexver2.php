@@ -26,7 +26,7 @@
                         <td>
                             <input type="date" id="text01" size="30" name="dateofbirth"<?php if(!empty($_SESSION['dateofbirth'])) echo "value=".$_SESSION['dateofbirth'];?>>
                             <?php
-                                if($_SESSION['db']==1)
+                                 if(empty($_SESSION['dateofbirth']))
                                 {
                                 echo"<span id='redit'><b>Input Information</b></span>";
                                 }
@@ -53,7 +53,7 @@
                                 <input type="radio" name="gender" value="female"<?php if($_SESSION['gender']=='female') echo "checked"; ?>> Female<br>
                                 <input type="radio" name="gender" value="other"<?php if($_SESSION['gender']=='other') echo "checked"; ?>> Other  
                                 <?php
-                                if($_SESSION['g']==1)
+                                if(empty($_SESSION['gender']))
                                 {
                                 echo"<span id='redit'><b>Input Information</b></span>";
                                 }
@@ -87,7 +87,7 @@
                                  <option value="Offical"<?php if($_SESSION['pass_type']=='Official')echo "selected"; ?>>Offical</option>
                                  <option value="Diplomatic"<?php if($_SESSION['pass_type']=='Diplomatic')echo "selected"; ?>>Diplomatic</option>
                                  <?php
-                                if($_SESSION['ps']==1)
+                                if(empty($_SESSION['pass_type']))
                                 {
                                 echo"<span id='redit'><b>Input Information</b></span>";
                                 }
@@ -102,7 +102,7 @@
                              <p>                         
                                 <input type="number" id="text01" size="30" name="birthidno" pattern = "[0-9]"<?php if(!empty($_SESSION['birthidno'])) echo "value=".$_SESSION['birthidno'];?>>
                                 <?php
-                                if($_SESSION['bd']==1)
+                                if(empty($_SESSION['birthidno']))
                                 {
                                 echo"<span id='redit'><b>Input Information</b></span>";
                                 }
@@ -150,7 +150,7 @@
                                 
                                 <input type="number" id="text01" size="30" name="height_cm" pattern = "[0-9]"<?php if(!empty($_SESSION['height_cm'])) echo "value=".$_SESSION['height_cm'];?>>
                                 <?php
-                                if($_SESSION['hcm']==1)
+                               if(empty($_SESSION['height_cm']))
                                 {
                                 echo"<span id='redit'><b>Input Information</b></span>";
                                 }
@@ -160,7 +160,7 @@
                                 <input type="number" id="text01" size="30" name="height_inch" pattern = "[0-9]"<?php if(!empty($_SESSION['height_inch'])) echo "value=".$_SESSION['height_inch'];?>>
                                 <span id="nmb">inch</span>
                                 <?php
-                                if($_SESSION['hin']==1)
+                                 if(empty($_SESSION['height_inch']))
                                 {
                                 echo"<span id='redit'><b>Input Information</b></span>";
                                 }
@@ -182,7 +182,7 @@
                                
                             </select>
                             <?php
-                                if($_SESSION['re']==1)
+                                 if(empty($_SESSION['religion']))
                                 {
                                 echo"<span id='redit'><b>Select Religion</b></span>";
                                 }
@@ -200,7 +200,7 @@
                             
                             <input type="text" id="text01" size="30" name="nameofapplicant" pattern = "[a-zA-Z]*"<?php if(!empty($_SESSION['nameofapplicant'])) echo "value=".$_SESSION['nameofapplicant'];?>>
                             <?php
-                                if($_SESSION['nam']==1)
+                                if(empty($_SESSION['nameofapplicant']))
                                 {
                                 echo"<span id='redit'><b>Input Name</b></span>";
                                 }
@@ -213,7 +213,7 @@
                             
                             <input type="email" id="text01" size="30" name="appliemail"<?php if(!empty($_SESSION['appliemail'])) echo "value=".$_SESSION['appliemail'];?>>
                             <?php
-                                if($_SESSION['apm']==1)
+                                 if(empty($_SESSION['appliemail']))
                                 {
                                 echo"<span id='redit'><b>Input Email</b></span>";
                                 }
@@ -242,7 +242,7 @@
                         <td>
                             <input type="text" id="text01" size="30" name="surnnameofapplicant" pattern = "[a-zA-Z]*"<?php if(!empty($_SESSION['surnnameofapplicant'])) echo "value=".$_SESSION['surnnameofapplicant'];?>>
                             <?php
-                                if($_SESSION['sp']==1)
+                                if(empty($_SESSION['surnnameofapplicant']))
                                 {
                                 echo"<span id='redit'><b>Input surname</b></span>";
                                 }
@@ -285,7 +285,7 @@
                         <td>
                             <input type="text" id="text01" size="30" name="nameoffather" pattern = "[a-zA-Z]*"<?php if(!empty($_SESSION['nameoffather'])) echo "value=".$_SESSION['nameoffather'];?>>
                             <?php
-                                if($_SESSION['gn']==1)
+                                if(empty($_SESSION['nameoffather']))
                                 {
                                 echo"<span id='redit'><b>Input Father Name</b></span>";
                                 }
@@ -299,7 +299,7 @@
                             <input type="radio" name="citizen_ship_type" value="Yes"<?php if($_SESSION['citizen_ship_type']=='Yes') echo "checked"; ?>>Yes<br>
                             <input type="radio" name="citizen_ship_type" value="No"<?php if($_SESSION['citizen_ship_type']=='No') echo "checked"; ?>> No<br>
                             <?php
-                                if($_SESSION['cit']==1)
+                                if(empty($_SESSION['citizen_ship_type']))
                                 {
                                 echo"<span id='redit'><b>Select Citizen Ship Type</b></span>";
                                 }
@@ -337,7 +337,8 @@
                            
                             </select><br><br>
                           <?php
-                            if($_SESSION['fp']==1)
+                                if(empty($_SESSION['father_profession']))
+
                                 {
                                 echo"<span id='redit'><b>Input Father Profession</b></span>";
                                 }
@@ -353,7 +354,7 @@
                         <td>
                             <input type="text" id="text01" size="30" name="nameofmother" pattern = "[a-zA-Z]*"<?php if(!empty($_SESSION['nameofmother'])) echo "value=".$_SESSION['nameofmother'];?>>
                             <?php
-                                    if($_SESSION['mn']==1)
+                                if(empty($_SESSION['nameofmother']))
                                 {
                                 echo"<span id='redit'><b>Input Mother Name</b></span>";
                                 }
@@ -404,7 +405,7 @@
                                  <option value="Business"<?php if($_SESSION['mother_profession']=='Business')echo "selected"; ?>>Business</option>
                             </select><br><br>
                             <?php
-                                    if($_SESSION['mp']==1)
+                                   if(empty($_SESSION['mother_profession']))
                                 {
                                 echo"<span id='redit'><b>Input Mother Profession</b></span>";
                                 }
@@ -422,7 +423,7 @@
                                  <option value="Barishal"<?php if($_SESSION['district']=='Barishal')echo "selected"; ?>>Barishal</option>
                             </select><br><br>
                             <?php
-                                    if($_SESSION['d']==1)
+                                  if(empty($_SESSION['district']))
                                 {
                                 echo"<span id='redit'><b>Select District</b></span>";
                                 }
@@ -450,7 +451,7 @@
                                  <option value="Barishal"<?php if($_SESSION['police']=='Barishal')echo "selected"; ?>>Barishal</option>
                             </select><br><br>
                             <?php
-                                    if($_SESSION['po']==1)
+                                   if(empty($_SESSION['police']))
                                 {
                                 echo"<span id='redit'><b>Select Police Station</b></span>";
                                 }
@@ -470,7 +471,7 @@
                                  <option value="Barishal"<?php if($_SESSION['postoffice']=='Barishal')echo "selected"; ?>>Barishal</option>
                             </select><br><br>
                             <?php
-                                    if($_SESSION['pos']==1)
+                                    if(empty($_SESSION['postoffice']))
                                 {
                                 echo"<span id='redit'><b>Select Post Office</b></span>";
                                 }
@@ -520,7 +521,7 @@
                                  <option value="Single"<?php if($_SESSION['marital_status']=='Single')echo "selected"; ?>>Single</option>
                             </select><br><br>
                             <?php
-                                    if($_SESSION['mts']==1)
+                                  if(empty($_SESSION['marital_status']))
                                 {
                                 echo"<span id='redit'><b>Select Status</b></span>";
                                 }
@@ -544,7 +545,7 @@
                                  <option value="Business"<?php if($_SESSION['applicant_profession']=='Business')echo "selected"; ?>>Business</option>
                             </select><br><br>
                             <?php
-                                    if($_SESSION['apf']==1)
+                                  if(empty($_SESSION['applicant_profession']))
                                 {
                                 echo"<span id='redit'><b>Select Profession</b></span>";
                                 }
@@ -593,7 +594,7 @@
                                  <option value="Barishal"<?php if($_SESSION['pmdistrict']=='Barishal')echo "selected"; ?>>Barishal</option>
                             </select><br><br>
                             <?php
-                                    if($_SESSION['pmdis']==1)
+                                    if(empty($_SESSION['pmdistrict']))
                                 {
                                 echo"<span id='redit'><b>Select District</b></span>";
                                 }
@@ -614,7 +615,7 @@
                                  <option value="Barishal"<?php if($_SESSION['birthdistrict']=='Barishal')echo "selected"; ?>>Barishal</option>
                             </select><br><br>
                             <?php
-                                    if($_SESSION['bdd']==1)
+                                    if(empty($_SESSION['birthdistrict']))
                                 {
                                 echo"<span id='redit'><b>Select District</b></span>";
                                 }
@@ -632,7 +633,7 @@
                                  <option value="Barishal"<?php if($_SESSION['pmpolice']=='Barishal')echo "selected"; ?>>Barishal</option>
                             </select><br><br>
                             <?php
-                                    if($_SESSION['pp']==1)
+                                    if(empty($_SESSION['pmpolice']))
                                 {
                                 echo"<span id='redit'><b>Select Police Station</b></span>";
                                 }
@@ -653,7 +654,7 @@
                                  <option value="Barishal"<?php if($_SESSION['pmpostoffice']=='Barishal')echo "selected"; ?>>Barishal</option>
                             </select><br><br>
                             <?php
-                                    if($_SESSION['ppos']==1)
+                                    if(empty($_SESSION['pmpostoffice']))
                                 {
                                 echo"<span id='redit'><b>Select Post Office</b></span>";
                                 }

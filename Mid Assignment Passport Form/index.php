@@ -406,7 +406,7 @@
                            
                         </td>
                         <td colspan="2">
-                            <p id="nmb"><b><input type="checkbox" name="addresssameas" value="yessame">Same as above</b></p>
+                            <p id="nmb"><b><input type="checkbox" name="addresssameas"  onlcik="place();">Same as above</b></p>
                         </td>
                     </tr>
                     <tr>
@@ -518,10 +518,7 @@
                        </td>
                     </tr>
                 </table>
-                function place()
-            
-                
-            
+                <script>            
             </form>
             
     </div>

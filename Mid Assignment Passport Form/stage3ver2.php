@@ -39,7 +39,7 @@
                 <tr><td></td><td></td><td></td><td></td></tr>
                 <tr>
                     <td >
-                        <p id="nmb"><b><input type="checkbox" name="skippay" value="yesskip">Skip Payement</b></p>
+                        <p id="nmb"><b><input type="checkbox" name="skippay" value="skippay"<?php if(!empty($_SESSION['yesskip'])) echo "checked"; ?>>Skip Payement</b></p>
                     </td>
                     <td></td><td></td>
                 </tr>
@@ -56,6 +56,12 @@
                                         <option value="AUD"<?php if($_SESSION['currency']=='AUD')echo "selected"; ?>>AUD</option>
                                     </select> 
                                     <input type="text" id="text02" size="30" name="amount"<?php if(!empty($_SESSION['amount'])) echo "value=".$_SESSION['amount'] ?>>
+                                <?php
+                                    if(empty($_SESSION['amount']))
+                                {
+                                echo"<span id='redit'><b>Input Amount</b></span>";
+                                }
+                                 ?>
                                  </p>
                             </td> 
                     </td>
@@ -69,17 +75,29 @@
                         </td>
                         <td>
                             <input type="date" id="text01" size="30" name="paymentdate"<?php if(!empty($_SESSION['paymentdate'])) echo "value=".$_SESSION['paymentdate'];?>>
+                            <?php
+                                   if(empty($_SESSION['paymentdate']))
+                                {
+                                echo"<span id='redit'><b>Input Date</b></span>";
+                                }
+                            ?>
                         </td>  
                     <td></td></td></td>
                 </tr>
-                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>                                                                    
                 <tr><td></td><td></td><td></td><td></td></tr>
                 <tr>
                     <td>
                         <span id="nmb"><b>Receiptno:<span id="redit">*</span></b></span>
                     </td>
                     <td>
-                         <input type="text" id="text01" size="30" name="receiptno"<?php if(!empty($_SESSION['receiptno'])) echo "value=".$_SESSION['receiptno'];?>>
+                         <input type="number" id="text01" size="30" name="receiptno" patter="[0-9]"<?php if(!empty($_SESSION['receiptno'])) echo "value=".$_SESSION['receiptno'];?>>
+                         <?php
+                                 if(empty($_SESSION['receiptno']))                                                                                                       
+                                {
+                                echo"<span id='redit'><b>Input Receipt Number</b></span>";
+                                }
+                            ?>
                     </td>  
                     <td></td></td></td>
                 </tr>
