@@ -1,218 +1,219 @@
 
 <?php
-            if(isset($_POST['gender']))
+        session_start();
+        if(isset($_SESSION['gender']))
         {
             $_SESSION['g']=2;
         }
-        if(empty($_POST['gender']))
+        if(empty($_SESSION['gender']))
         {
          $_SESSION['g']=1;
         }
-        if(isset($_POST['dateofbirth']))
+        if(isset($_SESSION['dateofbirth']))
         {
             $_SESSION['db']=2;
         }
-        if(empty($_POST['dateofbirth']))
+        if(empty($_SESSION['dateofbirth']))
         {
             $_SESSION['db']=1;
         }
-        if(isset($_POST['pass_type']))
+        if(isset($_SESSION['pass_type']))
         {
             $_SESSION['ps']=2;
         }
-        if(empty($_POST['pass_type']))
+        if(empty($_SESSION['pass_type']))
         {
             $_SESSION['ps']=1;
         }
-        if(isset($_POST['birthidno']))
+        if(isset($_SESSION['birthidno']))
         {
             $_SESSION['bd']=2;
         }
-        if(empty($_POST['birthidno']))
+        if(empty($_SESSION['birthidno']))
         {
             $_SESSION['bd']=1;
         }
-        if(isset($_POST['height_cm']))
+        if(isset($_SESSION['height_cm']))
         {
             $_SESSION['hcm']=2;
         }
-        if(empty($_POST['height_cm']))
+        if(empty($_SESSION['height_cm']))
         {
             $_SESSION['hcm']=1;
         } 
-        if(isset($_POST['height_inch']))
+        if(isset($_SESSION['height_inch']))
         {
             $_SESSION['hin']=2;
         }
-        if(empty($_POST['height_inch']))
+        if(empty($_SESSION['height_inch']))
         {
             $_SESSION['hin']=1;
         }
-        if(isset($_POST['religion']))
+        if(isset($_SESSION['religion']))
         {
             $_SESSION['re']=2;
         }
-        if(empty($_POST['religion']))
+        if(empty($_SESSION['religion']))
         {
             $_SESSION['re']=1;
         }
-        if(isset($_POST['nameofapplicant']))
+        if(isset($_SESSION['nameofapplicant']))
         {
             $_SESSION['nam']=2;
         }
-        if(empty($_POST['nameofapplicant']))
+        if(empty($_SESSION['nameofapplicant']))
         {
             $_SESSION['nam']=1;
         }
-        if(isset($_POST['appliemail']))
+        if(isset($_SESSION['appliemail']))
         {
             $_SESSION['apm']=2;
         }
-        if(empty($_POST['appliemail']))
+        if(empty($_SESSION['appliemail']))
         {
             $_SESSION['apm']=1;
         }
-        if(isset($_POST['surnnameofapplicant']))
+        if(isset($_SESSION['surnnameofapplicant']))
         {
             $_SESSION['sp']=2;
         }
-        if(empty($_POST['surnnameofapplicant']))
+        if(empty($_SESSION['surnnameofapplicant']))
         {
             $_SESSION['sp']=1;
         }
-        if(isset($_POST['nameoffather']))
+        if(isset($_SESSION['nameoffather']))
         {
             $_SESSION['gn']=2;
         }
-        if(empty($_POST['nameoffather']))
+        if(empty($_SESSION['nameoffather']))
         {
             $_SESSION['gn']=1;
         }
-        if(isset($_POST['citizen_ship_type']))
+        if(isset($_SESSION['citizen_ship_type']))
         {
             $_SESSION['cit']=2;
         }
-        if(empty($_POST['citizen_ship_type']))
+        if(empty($_SESSION['citizen_ship_type']))
         {
             $_SESSION['cit']=1;
         }
-        if(isset($_POST['father_nationality']))
+        if(isset($_SESSION['father_nationality']))
         {
             $_SESSION['fn']=2;
         }
-        if(empty($_POST['father_nationality']))
+        if(empty($_SESSION['father_nationality']))
         {
             $_SESSION['fn']=1;
         }
-        if(isset($_POST['father_profession']))
+        if(isset($_SESSION['father_profession']))
         {
             $_SESSION['fp']=2;
         }
-        if(empty($_POST['father_profession']))
+        if(empty($_SESSION['father_profession']))
         {
             $_SESSION['fp']=1;
         }
-        if(isset($_POST['nameofmother']))
+        if(isset($_SESSION['nameofmother']))
         {
             $_SESSION['mn']=2;
         }
-        if(empty($_POST['nameofmother']))
+        if(empty($_SESSION['nameofmother']))
         {
             $_SESSION['mn']=1;
         }
-        if(isset($_POST['mother_nationality']))
+        if(isset($_SESSION['mother_nationality']))
         {
             $_SESSION['mni']=2;
         }
-        if(empty($_POST['mother_nationality']))
+        if(empty($_SESSION['mother_nationality']))
         {
             $_SESSION['mni']=1;
         }
-        if(isset($_POST['mother_profession']))
+        if(isset($_SESSION['mother_profession']))
         {
             $_SESSION['mp']=2;
         }
-        if(empty($_POST['mother_profession']))
+        if(empty($_SESSION['mother_profession']))
         {
             $_SESSION['mp']=1;
         }
-        if(isset($_POST['district']))
+        if(isset($_SESSION['district']))
         {
             $_SESSION['d']=2;
         }
-        if(empty($_POST['district']))
+        if(empty($_SESSION['district']))
         {
             $_SESSION['d']=1;
         }
-        if(isset($_POST['police']))
+        if(isset($_SESSION['police']))
         {
             $_SESSION['po']=2;
         }
-        if(empty($_POST['police']))
+        if(empty($_SESSION['police']))
         {
             $_SESSION['po']=1;
         }
-        if(isset($_POST['postoffice']))
+        if(isset($_SESSION['postoffice']))
         {
             $_SESSION['pos']=2;
         }
-        if(empty($_POST['postoffice']))
+        if(empty($_SESSION['postoffice']))
         {
             $_SESSION['pos']=1;
         }
-        if(isset($_POST['marital_status']))
+        if(isset($_SESSION['marital_status']))
         {
             $_SESSION['mts']=2;
         }
-        if(empty($_POST['marital_status']))
+        if(empty($_SESSION['marital_status']))
         {
             $_SESSION['mts']=1;
         }
-        if(isset($_POST['applicant_profession']))
+        if(isset($_SESSION['applicant_profession']))
         {
             $_SESSION['apf']=2;
         }
-        if(empty($_POST['applicant_profession']))
+        if(empty($_SESSION['applicant_profession']))
         {
             $_SESSION['apf']=1;
         }
-        if(isset($_POST['birth_country']))
+        if(isset($_SESSION['birth_country']))
         {
             $_SESSION['brc']=2;
         }
-        if(empty($_POST['birth_country']))
+        if(empty($_SESSION['birth_country']))
         {
             $_SESSION['brc']=1;
         }
-        if(isset($_POST['pmdistrict']))
+        if(isset($_SESSION['pmdistrict']))
         {
             $_SESSION['pmdis']=2;
         }
-        if(empty($_POST['pmdistrict']))
+        if(empty($_SESSION['pmdistrict']))
         {
             $_SESSION['pmdis']=1;
         }
-        if(isset($_POST['birthdistrict']))
+        if(isset($_SESSION['birthdistrict']))
         {
             $_SESSION['bdd']=2;
         }
-        if(empty($_POST['birthdistrict']))
+        if(empty($_SESSION['birthdistrict']))
         {
             $_SESSION['bdd']=1;
         }
-        if(isset($_POST['pmpolice']))
+        if(isset($_SESSION['pmpolice']))
         {
             $_SESSION['pp']=2;
         }
-        if(empty($_POST['pmpolice']))
+        if(empty($_SESSION['pmpolice']))
         {
             $_SESSION['pp']=1;
         }
-        if(isset($_POST['pmpostoffice']))
+        if(isset($_SESSION['pmpostoffice']))
         {
             $_SESSION['ppos']=2;
         }
-        if(empty($_POST['pmpostoffice']))
+        if(empty($_SESSION['pmpostoffice']))
         {
             $_SESSION['ppos']=1;
         }
@@ -220,67 +221,67 @@
         {
             $_SESSION['Flag 1']=1;
         }
-        if(isset($_POST['emcontactname']))
+        if(isset($_SESSION['emcontactname']))
         {
             $_SESSION['emn']=2;
         }
-        if(empty($_POST['emcontactname']))
+        if(empty($_SESSION['emcontactname']))
         {
          $_SESSION['emn']=1;
         }
-        if(isset($_POST['em_country']))
+        if(isset($_SESSION['em_country']))
         {
             $_SESSION['emc']=2;
         }
-        if(empty($_POST['em_country']))
+        if(empty($_SESSION['em_country']))
         {
             $_SESSION['emc']=1;
         }
-        if(isset($_POST['emdistrict']))
+        if(isset($_SESSION['emdistrict']))
         {
             $_SESSION['emd']=2;
         }
-        if(empty($_POST['emdistrict']))
+        if(empty($_SESSION['emdistrict']))
         {
             $_SESSION['emd']=1;
         }
-        if(isset($_POST['empolice']))
+        if(isset($_SESSION['empolice']))
         {
             $_SESSION['emp']=2;
         }
-        if(empty($_POST['empolice']))
+        if(empty($_SESSION['empolice']))
         {
             $_SESSION['emp']=1;
         }
-        if(isset($_POST['empostoffice']))
+        if(isset($_SESSION['empostoffice']))
         {
             $_SESSION['empos']=2;
         }
-        if(empty($_POST['empostoffice']))
+        if(empty($_SESSION['empostoffice']))
         {
             $_SESSION['empos']=1;
         }
-        if(isset($_POST['emcontactnot']))
+        if(isset($_SESSION['emcontactnot']))
         {
             $_SESSION['emcon']=2;
         }
-        if(empty($_POST['emcontactno']))
+        if(empty($_SESSION['emcontactno']))
         {
             $_SESSION['emcon']=1;
         }
-        if(isset($_POST['ememail']))
+        if(isset($_SESSION['ememail']))
         {
             $_SESSION['eme']=2;
         }
-        if(empty($_POST['ememail']))
+        if(empty($_SESSION['ememail']))
         {
             $_SESSION['eme']=1;
         }
-        if(isset($_POST['emrelation']))
+        if(isset($_SESSION['emrelation']))
         {
             $_SESSION['emre']=2;
         }
-        if(empty($_POST['emrelation']))
+        if(empty($_SESSION['emrelation']))
         {
             $_SESSION['emre']=1;
         }
@@ -288,47 +289,47 @@
         {
             $_SESSION['Flag 2']=1;
         }
-        if(isset($_POST['currency']))
+        if(isset($_SESSION['currency']))
         {
             $_SESSION['ccn']=2;
         }
-        if(empty($_POST['currency']))
+        if(empty($_SESSION['currency']))
         {
             $_SESSION['ccn']=1;
         }
-        if(isset($_POST['amount']))
+        if(isset($_SESSION['amount']))
         {
             $_SESSION['ammn']=2;
         }
-        if(empty($_POST['amount']))
+        if(empty($_SESSION['amount']))
         {
             $_SESSION['ammn']=1;
         }
-        if(isset($_POST['emrelation']))
+        if(isset($_SESSION['emrelation']))
         {
             $_SESSION['emre']=2;
         }
-        if(empty($_POST['paymentdate']))
+        if(empty($_SESSION['paymentdate']))
         {
             $_SESSION['dap']=1;
         }
-        if(isset($_POST['paymentdate']))
+        if(isset($_SESSION['paymentdate']))
         {
             $_SESSION['dap']=2;
         }
-        if(empty($_POST['receiptno']))
+        if(empty($_SESSION['receiptno']))
         {
             $_SESSION['rep']=1;
         }
-        if(isset($_POST['receiptno']))
+        if(isset($_SESSION['receiptno']))
         {
             $_SESSION['rep']=2;
         }
         if($_SESSION['ccn']==1||$_SESSION['ammn']==1||$_SESSION['dap']==1||$_SESSION['rep']==1)
         {
             $_SESSION['Flag 3']=1;
-        }
-        header("validateresult.php");
+        }     
+        header('Location:validateresult.php');
 ?>
         
 

@@ -13,5 +13,5 @@
         $data = htmlspecialchars($data);
         return $data;
     }
-    header('Location:showtheresult.php');
+    header('Location:validate.php');
 ?>
