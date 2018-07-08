@@ -1,5 +1,8 @@
 <?php
     session_start();
+    $_SESSION['s1']=0;
+    $_SESSION['s2']=0;
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -273,6 +276,9 @@
                         </td>
                     </tr>
                 </table>    
-            </div>                                       
+            </div>
+            <?php
+            sess
+            ?>                                       
     </body>
 </html>

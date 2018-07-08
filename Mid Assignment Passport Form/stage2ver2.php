@@ -209,9 +209,12 @@
                     <td>
                          <select  id="op01" name="emrelation">
                              <option hidden></option>
-                             <option value="Spouse"<?php if($_SESSION['emrelation']=='Spouse')echo "selected"; ?> >Spouse</option>
+                             <option value="Spouse"<?php
+                                  if($_SESSION['emrelation']=='Spouse')echo "selected"; ?> >Spouse</option>
                              <option value="Father"<?php if($_SESSION['emrelation']=='Father')echo "selected"; ?> >Father</option>
-                            <option value="Mother"<?php if($_SESSION['emrelation']=='Mother')echo "selected"; ?> >Mother</option>
+                            <option value="Mother"<?php if($_SESSION['emrelation']=='Mother')echo "selected"; 
+                           ?> >Mother</option>
+                             
                          </select><br><br>
                      </td>
                      <td></td><td></td>
@@ -222,7 +225,7 @@
                     <td></td><td></td>
                     <td></td>
                     <td align="right" >
-                        <button class="button01" formaction="index.php">Previous Page</button>
+                        <button class="button01" formaction="indexver2.php">Previous Page</button>
                         <input class="button01" type="submit" value="Save & Next" name="save">
                     </td>
                 </tr>

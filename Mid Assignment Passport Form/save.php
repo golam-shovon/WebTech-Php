@@ -25,8 +25,9 @@
     $txt=$txt."Receipet No: ".$_SESSION['receiptno'].chr(13).chr(10);
     $txt=$txt."Bank Name: ".$_SESSION['bank'].chr(13).chr(10);
     $txt=$txt."Bramch Name: ".$_SESSION['branch'].chr(13).chr(10);
-     fwrite($myfile, $txt);
+    fwrite($myfile, $txt);
     fclose($myfile);
+    
     ?>
     <!DOCTYPE html>
     <html>

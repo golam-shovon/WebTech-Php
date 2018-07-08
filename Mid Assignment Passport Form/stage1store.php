@@ -1,5 +1,6 @@
 <?php
     session_start();
+    $_SESSION['s1'];
     $_SESSION['dateofbirth']=test_input($_POST['dateofbirth']);
     $_SESSION['app_place']=test_input($_POST['app_place']);
     $_SESSION['gender']=test_input($_POST['gender']);
@@ -49,5 +50,13 @@
         $data = htmlspecialchars($data);
         return $data;
     }
-    header('Location:stage2.php');
+    if($_SESSION['s1']==1)
+    {
+        header('Location:stage2ver2.php');
+    }
+    else
+    {
+        header('Location:stage2.php');
+    }
+    
 ?>

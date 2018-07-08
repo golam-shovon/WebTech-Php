@@ -261,7 +261,7 @@
         {
             $_SESSION['empos']=1;
         }
-        if(isset($_SESSION['emcontactnot']))
+        if(isset($_SESSION['emcontactno']))
         {
             $_SESSION['emcon']=2;
         }
@@ -330,6 +330,7 @@
             $_SESSION['Flag 3']=1;
         }     
         header('Location:validateresult.php');
+        $_SESSION[s3]=1;
 ?>
         
 

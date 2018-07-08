@@ -1,7 +1,10 @@
 <?php
     session_start();
+
     $_SESSION['payement']=test_input($_POST['payement']);
     $_SESSION['currency']=test_input($_POST['currency']);
+    $_SESSION['amount']=test_input($_POST['amount']);
+
     $_SESSION['paymentdate']=test_input($_POST['paymentdate']);
     $_SESSION['receiptno']=test_input($_POST['receiptno']);
     $_SESSION['bank']=test_input($_POST['bank']);

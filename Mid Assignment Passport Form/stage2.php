@@ -10,6 +10,7 @@
          session_start();
          $oaid=rand(10, 100000000);
          $_SESSION['rid']=$oaid;
+         $_SESSION['s1']=1;
     ?>
     <h4 id="h3">Online Application ID<?php echo$_SESSION['rid']?><h4>
     <h5 id="h3">Fiels marked with<div2 id="redit"> (*)</div2>are mandetory.</h5>

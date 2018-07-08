@@ -561,9 +561,8 @@
                 <tr></tr><tr></tr>
                 ";  
                 }
-                if($_SESSION['Flag 3']!==1 && $_SESSION['Flag 2']!==2 && $_SESSION['Flag 1']!==2)
-                {
-                    echo"
+                 
+                echo"
                 <tr>
                     <td colspan='3'>
                         <p id='blue'><b>Show The Complete File</b></p>
@@ -572,10 +571,14 @@
                         <a href='show.php' class='button01'>Show</a>
                     </td>
                 </tr>
-                <tr></tr><tr></tr>
-                "; 
-                }
-            ?>          
+                <tr></tr><tr></tr>"
+                
+            ?>  
+           
+             
+             
+
+                   
         </table>
     </div>
 </body>

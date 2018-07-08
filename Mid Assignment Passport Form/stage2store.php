@@ -1,5 +1,7 @@
 <?php
     session_start();
+    $_SESSION['s2'];
+
     $_SESSION['officeno']=test_input($_POST['officeno']);
     $_SESSION['passportno']=test_input($_POST['passportno']);
     $_SESSION['residenceno']=test_input($_POST['residenceno']);
@@ -24,5 +26,13 @@
         $data = htmlspecialchars($data);
         return $data;
     }
-    header('Location:stage3.php');
+    if($_SESSION['s2']==1)
+    {
+        header('Location:stage3ver2.php');
+    }
+    else
+    {
+        header('Location:stage3.php');
+    }
+    
 ?>

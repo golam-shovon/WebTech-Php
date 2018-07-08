@@ -8,6 +8,7 @@
     <h3 id="header">PASSPORT APPLICATION-STAGE 3</h3>
     <?php
         session_start();
+        $_SESSION['s2']=1;
     ?>
     <h4 id="h3">Online Application ID<?php echo$_SESSION['rid']?><h4>
     <h5 id="h3">Fiels marked with<div2 id="redit"> (*)</div2>are mandetory.</h5>

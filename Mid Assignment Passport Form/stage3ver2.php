@@ -55,7 +55,7 @@
                                         <option value="USD"<?php if($_SESSION['currency']=='USD')echo "selected"; ?>>USD</option>
                                         <option value="AUD"<?php if($_SESSION['currency']=='AUD')echo "selected"; ?>>AUD</option>
                                     </select> 
-                                    <input type="text" id="text02" size="30" name="amount">
+                                    <input type="text" id="text02" size="30" name="amount"<?php if(!empty($_SESSION['amount'])) echo "value=".$_SESSION['amount'] >
                                  </p>
                             </td> 
                     </td>
@@ -124,6 +124,7 @@
                 <td></td><td></td>
                 <td></td>
                 <td align="right" >
+                    <button class="button01" formaction="stage2ver2.php">Previous Page</button>
                      <input id="button01" type="submit" value="Save & Next" >
                 </td>
             </tr>
