@@ -245,17 +245,17 @@
                          <span id="nmb"><b>Relation:<span id="redit">*</span></b></span><br><br>
                     </td>
                     <td>
-                         <select  id="op01" name="emrelation">
+                         <select  id="op01" name="emrelatio">
                              <option hidden></option>
                              <option value="Spouse"<?php
-                                  if($_SESSION['emrelation']=='Spouse')echo "selected"; ?> >Spouse</option>
-                             <option value="Father"<?php if($_SESSION['emrelation']=='Father')echo "selected"; ?> >Father</option>
-                            <option value="Mother"<?php if($_SESSION['emrelation']=='Mother')echo "selected"; 
+                            if($_SESSION['emrelatio']=='Spouse')echo "selected"; ?> >Spouse</option>
+                             <option value="Father"<?php if($_SESSION['emrelatio']=='Father')echo "selected"; ?> >Father</option>
+                            <option value="Mother"<?php if($_SESSION['emrelatio']=='Mother')echo "selected"; 
                            ?> >Mother</option>
                              
                          </select><br><br>
                          <?php
-                                  if(empty($_SESSION['emrelation']))
+                                  if(empty($_SESSION['emrelatio']))
                                 {
                                 echo"<span id='redit'><b>Select Relation </b></span>";
                                 }

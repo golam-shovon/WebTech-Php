@@ -18,71 +18,8 @@
     $_SESSION['empostoffice']=test_input($_POST['empostoffice']);
     $_SESSION['emcontactno']=test_input($_POST['emcontactno']);
     $_SESSION['ememail']=test_input($_POST['ememail']);
-    $_SESSION['emrelations']=test_input($_POST['emrelation']);
-    if(isset($_SESSION['emcontactname']))
-        {
-            $_SESSION['emn']=2;
-        }
-        if(empty($_SESSION['emcontactname']))
-        {
-         $_SESSION['emn']=1;
-        }
-        if(isset($_SESSION['em_country']))
-        {
-            $_SESSION['emc']=2;
-        }
-        if(empty($_SESSION['em_country']))
-        {
-            $_SESSION['emc']=1;
-        }
-        if(isset($_SESSION['emdistrict']))
-        {
-            $_SESSION['emd']=2;
-        }
-        if(empty($_SESSION['emdistrict']))
-        {
-            $_SESSION['emd']=1;
-        }
-        if(isset($_SESSION['empolice']))
-        {
-            $_SESSION['emp']=2;
-        }
-        if(empty($_SESSION['empolice']))
-        {
-            $_SESSION['emp']=1;
-        }
-        if(isset($_SESSION['empostoffice']))
-        {
-            $_SESSION['empos']=2;
-        }
-        if(empty($_SESSION['empostoffice']))
-        {
-            $_SESSION['empos']=1;
-        }
-        if(isset($_SESSION['emcontactno']))
-        {
-            $_SESSION['emcon']=2;
-        }
-        if(empty($_SESSION['emcontactno']))
-        {
-            $_SESSION['emcon']=1;
-        }
-        if(isset($_SESSION['ememail']))
-        {
-            $_SESSION['eme']=2;
-        }
-        if(empty($_SESSION['ememail']))
-        {
-            $_SESSION['eme']=1;
-        }
-        if(isset($_SESSION['emrelation']))
-        {
-            $_SESSION['emre']=2;
-        }
-        if(empty($_SESSION['emrelation']))
-        {
-            $_SESSION['emre']=1;
-        }
+    $_SESSION['emrelatio']=test_input($_POST['emrelatio']);
+
     function test_input($data) 
     {
         $data = trim($data);

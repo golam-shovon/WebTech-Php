@@ -277,11 +277,11 @@
         {
             $_SESSION['eme']=1;
         }
-        if(isset($_SESSION['emrelation']))
+        if(isset($_SESSION['emrelatio']))
         {
             $_SESSION['emre']=2;
         }
-        if(empty($_SESSION['emrelation']))
+        if(empty($_SESSION['emrelatio']))
         {
             $_SESSION['emre']=1;
         }
