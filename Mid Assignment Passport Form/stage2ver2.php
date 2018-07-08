@@ -9,7 +9,7 @@
     <?php
          session_start();
     ?>
-    <h4 id="h2">Before filling up the online application form read the<div1 id="blueun"> guidelines</div1> carefully.<h4>
+    <h4 id="h3">Online Application ID<?php echo$_SESSION['rid']?><h4>
     <h5 id="h3">Fiels marked with<div2 id="redit"> (*)</div2>are mandetory.</h5>
     <hr id="marit">
     <br>
