@@ -1,10 +1,11 @@
 <?php
 session_start();
- 
+$_SESSION['u']=0;
 $uspw=array("P"=>"pp", "T"=>"tt", "J"=>"jj");
 var_dump($uspw);
 
-foreach($uspw as $un=>$pw){
+foreach($uspw as $un=>$pw)
+{
 	/* echo $un.$pw;
 	echo $_POST['un'];
 	echo $_POST['pw']; */
@@ -15,9 +16,12 @@ foreach($uspw as $un=>$pw){
 	   break;
    }
 	 else
-{
-	header("location:erlogin.php");
-} 
+
+	 {
+		$_SESSION['u']=1;
+		header("location:login.php");
+
+	} 
   
  }
 
