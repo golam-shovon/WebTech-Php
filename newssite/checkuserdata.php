@@ -15,7 +15,7 @@ $statement="select * from user WHERE name='$head'";
 $result = mysqli_query($conn, $statement);
 $row = mysqli_fetch_assoc($result);
 $ps=$row['password'];
-if($data==$ps  )
+if($data==$ps )
 {
     header("Location:indexstage2.php");
 }
