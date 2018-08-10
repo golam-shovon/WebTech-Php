@@ -36,7 +36,7 @@
                 </div>
 			</form>
             <a href="newspaper.php">See newspaper</a>
-            <form name="userverification" method="post" action="checkuserdata.php">	
+            <form name="userverification" method="post" action="checkuser.php">	
 				<table >
 					<tr>
 						<td><input type="text" name="name" ></td>
